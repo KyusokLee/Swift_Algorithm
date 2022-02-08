@@ -1,8 +1,8 @@
 //
-//  main.swift
+//  BaekJoon_Algorithm_Class1_day3.swift
 //  BaekJoon
 //
-//  Created by Kyus'lee on 2022/02/06.
+//  Created by Kyus'lee on 2022/02/08.
 //
 
 import Foundation
@@ -71,3 +71,59 @@ for i in word2 {
 
 print(dict2)
 
+//array practice + 文字列の結合練習
+var practice1 = [Int]()
+for _ in 0..<10 {
+    practice1.append(Int(readLine()!)!)
+}
+
+let maxOfArr = practice1.max()!
+//max()とmin()はOptional値を返す＞＞そのため、！をつけた
+let idxOfMax = practice1.firstIndex(of:maxOfArr)! //!する理由はなんでだろう。。
+let idxOfEnd = practice1.endIndex
+//文字列の最後の文字であるendIndexは、配列の全長の値を返すので、注意する必要がある
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]があるときendIndexは10を返す 実際の最後の要素はarray[9]である。
+print(practice1)
+print(maxOfArr)
+print(idxOfMax)
+print(idxOfEnd)
+practice1.insert(900, at: idxOfEnd)
+print(practice1)
+
+//Mapの考察・練習
+var intArr = [Int]()
+var resultArr = [Int]()
+
+for _ in 0..<3 {
+    intArr.append(Int(readLine()!)!)
+}
+
+var mul = intArr.reduce(1){ $0 * $1 } // ->Type: Int
+//Int型はmapを持っていない
+//Intの数字をInt型の一字一字ずつ分けるときは、Stringに変換した後、また、Intに変換する必要がある。
+let splitmul = String(mul).map { $0 } //このままだと、"”がついているCharacter型を要素と持つ配列を返す
+print(splitmul)
+print(type(of:splitmul[0]))
+let splitmul2 = String(mul).map { String($0) } //""がついているString型の要素を持つ変換
+print(splitmul2)
+print(type(of:splitmul2[0]))
+let splitmul3 = String(mul).map { Int(String($0))! }//もう一回変換することで、Optionalになってるため、!がつける
+print(splitmul3)
+print(type(of:splitmul3[0]))
+//character型から直接int型に変換はできない（？）けど、Stringに変えてからInt型に変えると可能である。
+
+//let splitmul2 = String(mul).map {}
+//mapは配列に変換してくれる
+//配列をmapするとcharacterにタイプが変わる
+
+//ASCIIコードへの変換とその逆変換の練習
+let a = 65
+let b = UnicodeScalar(a)! //Scalar型に変換する
+print(type(of:b))
+print(a)
+print(b)
+
+//UnicodeScalarの意味：Asciiコードの値を文字（数字、アルファベット、日本語など）に変換してくれる
+let prac_word = Array(readLine()!) //入力したStringを一字ずつ分けて、配列にCharacterとして格納
+print(prac_word)
+print(type(of:prac_word))

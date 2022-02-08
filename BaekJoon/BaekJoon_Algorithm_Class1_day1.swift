@@ -26,7 +26,6 @@ print(putArr3)
 
 //BaekJoon Algorithm Study Num.1157 (最も多く入力された文字の数）
 let word = readLine()!.uppercased()
-let word_arr = word.split(separator: " ").count
 var dict: [String:Int] = [:]
 var result = [String]()
 
