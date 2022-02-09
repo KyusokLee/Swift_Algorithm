@@ -1,8 +1,8 @@
 //
-//  BaekJoon_Algorithm_Class1_day3.swift
+//  Day4-BaekJoon_Algorithm_Class1_last and Class2_day1.swift
 //  BaekJoon
 //
-//  Created by Kyus'lee on 2022/02/08.
+//  Created by Kyus'lee on 2022/02/09.
 //
 
 import Foundation
