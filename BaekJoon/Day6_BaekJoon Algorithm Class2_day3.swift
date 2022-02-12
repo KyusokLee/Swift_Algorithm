@@ -179,4 +179,22 @@ for _ in 0..<command_num {
     }
 }
 
+//BaekJoon Algorithm n.11050 (二項係数(組合せ論))
+// Combination 組み合わせの原理を理解！
+// Stride使うとき、by: の後ろに入る数字は、負の整数の場合、- 1じゃなく -1にする！空白入れるとErrorがでる！
+func factorial (_ num: Int) -> Double {
+    var count = 1
+    for i in stride(from: num, to: 1, by: -1) {
+        count *= i
+    }
+    return Double(count)
+}
+
+let N_K = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = N_K[0]
+let K = N_K[1]
+
+let combination_0 = factorial(N_K[0]) / (factorial(N_K[1]) * factorial(N_K[0] - N_K[1]))
+print(Int(combination_0))
+
 
