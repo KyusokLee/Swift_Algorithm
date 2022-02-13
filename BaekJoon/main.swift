@@ -185,4 +185,3 @@ let practice_3: [Any?] = [0, 1, 2, 3, nil, "a", "2"] //nilがあることからT
 let N_K1 = readLine()!.split(separator: " ") //Array<Substring>を生成
 print(type(of:N_K1))
 
-

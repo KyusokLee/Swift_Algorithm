@@ -86,6 +86,8 @@ for i in 0..<input3 {
 }
 
 //BaekJoon Algorithm Study num.2908 数字を逆に読むAさん（二つの数の比較）
+//reverse() reversed()の比較：両方とも新しい配列を出力するのではなく、その場で入力された文字列を逆順に返す！
+//reversed() = O(1)    reverse() = O(n)の違い
 let input4 = readLine()!.split(separator: " ")
 var arr: [String] = [String]()
 //typeof input4[i] はsplitでくくったためsubstring タイプである。これをStringに変換する必要がある

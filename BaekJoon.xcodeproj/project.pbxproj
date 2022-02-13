@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		9413123327B52A98003F77A1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9423952727B7D25E001201E6 /* Day7_BaekJoon Algorithm Class2_day_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day7_BaekJoon Algorithm Class2_day_4.swift"; sourceTree = "<group>"; };
+		94280BFC27B9022C00256736 /* Day8_BaekJoon Algorithm_Week1の復讐及びまとめ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day8_BaekJoon Algorithm_Week1の復讐及びまとめ.swift"; sourceTree = "<group>"; };
 		9466556027B611D300665C9C /* Day6_BaekJoon Algorithm Class2_day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day6_BaekJoon Algorithm Class2_day3.swift"; sourceTree = "<group>"; };
 		9469ECED27B3FF2900695234 /* Day5_BaekJoon Algorithm Class_2 day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day5_BaekJoon Algorithm Class_2 day2.swift"; sourceTree = "<group>"; };
 		9486363B27B0122800FD9E89 /* BaekJoon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaekJoon; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,14 +65,15 @@
 		9486363D27B0122800FD9E89 /* BaekJoon */ = {
 			isa = PBXGroup;
 			children = (
-				9486363E27B0122800FD9E89 /* BaekJoon_Algorithm_Class1_day3.swift */,
 				9486364527B012F000FD9E89 /* BaekJoon_Algorithm_Class1_day1.swift */,
 				94E0DDB327B122FD00F66814 /* BaekJoon_Algorithm_Class1_day2.swift */,
+				9486363E27B0122800FD9E89 /* BaekJoon_Algorithm_Class1_day3.swift */,
 				94B5407627B26F70001807C6 /* Day4_BaekJoon_Algorithm_Class1_last and Class2_day1.swift */,
 				9469ECED27B3FF2900695234 /* Day5_BaekJoon Algorithm Class_2 day2.swift */,
-				9413123327B52A98003F77A1 /* main.swift */,
 				9466556027B611D300665C9C /* Day6_BaekJoon Algorithm Class2_day3.swift */,
 				9423952727B7D25E001201E6 /* Day7_BaekJoon Algorithm Class2_day_4.swift */,
+				94280BFC27B9022C00256736 /* Day8_BaekJoon Algorithm_Week1の復讐及びまとめ.swift */,
+				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
 			sourceTree = "<group>";
