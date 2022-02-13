@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  Programmers_Algorithm(KR)
+//  Programmers_Restudy
 //
 //  Created by Kyus'lee on 2022/02/13.
 //
