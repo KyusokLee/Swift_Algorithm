@@ -113,7 +113,7 @@ if let test_NUM = readLine() {
 
 let readNum = Int(readLine()!)!
 
-⭕️方法2: for 文の繰り返しの方法：if let を使わない方法
+//⭕️方法2: for 文の繰り返しの方法：if let を使わない方法
 for _ in 0..<readNum {
     let stack_data = readLine()!.split(separator: " ")
 
