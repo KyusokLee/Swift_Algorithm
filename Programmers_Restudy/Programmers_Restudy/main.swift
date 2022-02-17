@@ -7,16 +7,7 @@
 
 import Foundation
 
-//
-//  main.swift
-//  Programmers
-//
-//  Created by Kyus'lee on 2022/02/06.
-//
-
-import Foundation
-
-//🔥🌈Programmers Algorithm Study ReStart--Day 1
+//🔥🌈Programmers Algorithm Study ReStart--Day 1　& Day 2
 //Coding Test Practice_ High Score Kit __ 完全探索 (素数探し) 重要度：🎖🎖🎖🎖🎖 難易度：🔥🔥
 //再帰関数の理解がとても難しい
 
@@ -31,79 +22,140 @@ import Foundation
 
 //‼️順列と組合せのアルゴリズムを必ず使いこなせるようにすること！‼️
 
-func solution1(_ numbers: String) -> Int {
-    let char = numbers.map { String($0) } //StringをString配列に変える
-    var primeNumArray = [Int]()
-    var checkList = Array<Int>(repeating: 0, count: char.count)
-    // checkList意味：選択した数字を一番前の数字にして作れる素数をチェック！
-    //例えば、1を選ぶとすると、1から始まる素数、11や17、101などの素数をすべて作り、これ以上作る素数がなければ次の数字に移るというシステム
-    //まず、0に初期化し、選択した数字で素数の作成作業が始まると1にする。また、その作業が終わったら再び0に変更し、次のものを1にして、作業のプロセスを進める構造
-    var selectNum = ""
+//func solution1(_ numbers: String) -> Int {
+//    let char = numbers.map { String($0) } //StringをString配列に変える
+//    var primeNumArray = [Int]()
+//    var checkList = Array<Int>(repeating: 0, count: char.count) //Check: 1 , Non-Check: 0
+//    // checkList意味：選択した数字を一番前の数字にして作れる素数をチェック！
+//    //例えば、1を選ぶとすると、1から始まる素数、11や17、101などの素数をすべて作り、これ以上作る素数がなければ次の数字に移るというシステム
+//    //まず、0に初期化し、選択した数字で素数の作成作業が始まると1にする。また、その作業が終わったら再び0に変更し、次のものを1にして、作業のプロセスを進める構造
+//    var selectNum = ""
+//
+//    //素数の判断
+//    func checkPrime(_ num: Int) -> Bool {
+//        guard num > 1 else {return false}
+//        // num > 1じゃない時、else文実行. また、num > 1の時、ここのguard 以降のコードを実行
+//        guard num != 2 else {return true}
+//        // num が 2じゃないとき、guard文以降のコード実行 numが２のときは、else文にあるtrue実行して、checkPrime関数を抜ける
+//        // なぜなら、2も素数であるため
+//
+//        var isPrime = true
+//        for i in 2..<num {
+//            if num % i == 0 {
+//                isPrime = false //割り切れる数字があるなら、入力したnumは素数じゃない！
+//                break    //breakでisPrime = false値を返す
+//            }
+//        }
+//        return isPrime
+//    }
+//
+//    //順列アルゴリズム(再帰DFS探索)
+//    // DFS関数で用いたパラメータは以下のようになる
+//    //  1️⃣depth: 今まで作られた数字の桁数（0から始めて1ずつ足していってcountになると数字が完成する）
+//    //  2️⃣string: 選んだ数字
+//    //  3️⃣count: 作ろうとする数字の桁数
+//    func DFS(_ depth: Int, _ string: String, _ count: Int) {
+//        print("以下のfor文からの呼び出し入り　ー＞ \(checkList)")
+//        var DFS_count = 0
+//        if depth == count { //作る数字の桁数がmaxになった場合
+//            if let num_toInt = Int(string) {
+//                if checkPrime(num_toInt) && !primeNumArray.contains(num_toInt) {
+//                    primeNumArray.append(num_toInt)
+//                    print("->!!Find: \(primeNumArray) ")
+//                }
+//            }
+//        } else {
+//            for i in 0..<char.count {
+//                if checkList[i] == 0 {
+//                    print("DFS中のfor文入り　ー＞　現在のcheckList[\(i)] = \(checkList[i])")
+//                    selectNum += char[i]
+//                    print("-> 今選んだ数字: \(selectNum)")
+//                    checkList[i] = 1
+//                    print("DFS呼び出し前の checkList[\(i)] = \(checkList[i])")
+//                    print(primeNumArray)
+//                    print("DFSの呼び出し: \(DFS_count + 1)回目")
+//                    DFS(depth + 1, selectNum, count) //再帰関数 DFS の呼び出し
+//                    DFS_count += 1
+//                    print("DFS呼び出し後の checkList[\(i)] = \(checkList[i])")
+//                    print(primeNumArray)
+//                    checkList[i] = 0 // 再帰関数の呼び出しが終了後、チェックを解除する
+//                    selectNum = string // selectNumを stringに初期化する
+//                    print("DFS中のfor文が終わる時点　-> DFS呼び出し後の checkList[\(i)] = \(checkList[i])")
+//                }
+//            }
+//        }
+//    }
+//
+//    for i in 1...char.count {
+//        print(" >> for文からのDFS呼び出しに入る: \(i)回目")
+//        DFS(0, "", i)
+//    }
+//
+//    return primeNumArray.count
+//}
+//
+//print(solution1("174"))
 
-    //素数の判断
-    func checkPrime(_ num: Int) -> Bool {
-        guard num > 1 else {return false}
-        // num > 1じゃない時、else文実行. また、num > 1の時、ここのguard 以降のコードを実行
-        guard num != 2 else {return true}
-        // num が 2じゃないとき、guard文以降のコード実行 numが２のときは、else文にあるtrue実行して、checkPrime関数を抜ける
-        // なぜなら、2も素数であるため
+//🔥🔥🌈自分の力でもう一度コードを作成して、理解すること！
+// 🌈📝考察: 再帰関数DFS_permutaionは、簡単いいうと、多重loopと似たような感じになっている
+// ⭐️⭐️重要ポイント ----------------------------
+//  DFSのfor文に入りi = 0からloopさせる段階でDFSを呼び出し、
+//             -> 呼び出したDFSでまた、for文に入りi = 0からloopさせる!
+//        しかし、check_List で、check_List[0]の部分がtrueになっているから、DFS中のDFSはi = 1から回る
+//             ->この作業が終わったら、DFS中のDFSが for　文の i = 2になって探索を始め、この作業も終わったら上位のDFSが i = 1になる
+// ⭐️⭐️ -------------------------------------
 
+func solution2(_ numbers: String) -> Int {
+    let char_numbers = numbers.map { String($0) }
+    var result: [Int] = [Int]()
+    var check_List = Array<Bool>(repeating: false, count: char_numbers.count)
+    var currentNum = ""
+    
+    func DFS_permutation(_ depth: Int, _ select: String, _ digits: Int) {
+        if depth == digits {
+            if let isInt = Int(select) {
+                if checkPrime(isInt) && !result.contains(isInt) {
+                    result.append(isInt)
+                }
+            }
+        } else {
+            for i in 0..<char_numbers.count {
+                if check_List[i] == false {
+                    check_List[i] = true
+                    currentNum += char_numbers[i]
+                    DFS_permutation(depth + 1, currentNum, digits)
+                    check_List[i] = false
+                    currentNum = select
+                }
+            }
+            
+        }
+    }
+    
+    func checkPrime(_ number: Int) -> Bool {
+        guard number > 1 else { return false }
+        guard number != 2 else { return true } //ここで一度2だけをふるいにかける作業をする。
+        // 以下のfor 文で % 2 == 0 作業を皮切りにプロセスを進めるため、ここで数字2 をふるいにかける作業はコードをより効率的にしてくれる。
+        
         var isPrime = true
-        for i in 2..<num {
-            if num % i == 0 {
-                isPrime = false //割り切れる数字があるなら、入力したnumは素数じゃない！
-                break    //breakでisPrime = false値を返す
+        for i in 2...Int((sqrt(Double(number))))+1 {
+            if number % i == 0 {
+                isPrime = false
+                break
             }
         }
         return isPrime
     }
-
-    //順列アルゴリズム(再帰DFS探索)
-    // DFS関数で用いたパラメータは以下のようになる
-    //  1️⃣depth: 今まで作られた数字の桁数（0から始めて1ずつ足していってcountになると数字が完成する）
-    //  2️⃣string: 選んだ数字
-    //  3️⃣count: 作ろうとする数字の桁数
-    func DFS(_ depth: Int, _ string: String, _ count: Int) {
-        print("以下のfor文からの呼び出し入り　ー＞ \(checkList)")
-        var DFS_count = 0
-        if depth == count { //作る数字の桁数がmaxになった場合
-            if let num_toInt = Int(string) {
-                if checkPrime(num_toInt) && !primeNumArray.contains(num_toInt) {
-                    primeNumArray.append(num_toInt)
-                    print("->!!Find: \(primeNumArray) ")
-                }
-            }
-        } else {
-            for i in 0..<char.count {
-                if checkList[i] == 0 {
-                    print("DFS中のfor文入り　ー＞　現在のcheckList[\(i)] = \(checkList[i])")
-                    selectNum += char[i]
-                    print("-> 今選んだ数字: \(selectNum)")
-                    checkList[i] = 1
-                    print("DFS呼び出し前の checkList[\(i)] = \(checkList[i])")
-                    print(primeNumArray)
-                    print("DFSの呼び出し: \(DFS_count + 1)回目")
-                    DFS(depth + 1, selectNum, count) //再帰関数 DFS の呼び出し
-                    DFS_count += 1
-                    print("DFS呼び出し後の checkList[\(i)] = \(checkList[i])")
-                    print(primeNumArray)
-                    checkList[i] = 0 // 再帰関数の呼び出しが終了後、チェックを解除する
-                    selectNum = string // selectNumを stringに初期化する
-                    print("DFS中のfor文が終わる時点　-> DFS呼び出し後の checkList[\(i)] = \(checkList[i])")
-                }
-            }
-        }
+    
+    for i in 1...char_numbers.count {
+        DFS_permutation(0, "", i)
+        //初期設定は、深さが0からスタートすることにする！
     }
-
-    for i in 1...char.count {
-        print(" >> for文からのDFS呼び出しに入る: \(i)回目")
-        DFS(0, "", i)
-    }
-
-    return primeNumArray.count
+    
+    return result.count
 }
-
-print(solution1("174"))
+print(solution2("17"))
+print(solution2("011"))
 
 
 ////練習
@@ -138,46 +190,46 @@ print(solution1("174"))
 
 //他の人のコード
 
-//👋❌理解 NOT OKAY (Now Studying Step)
-//🔥🔥[戦略] : Setを用いることで、重複をなくすことができる
-func combinations(_ array: [String]) -> Set<String> {
-    if array.count == 0 {
-        return []
-    }
-
-    //🔥Closureの活用を身につけること！
-    let answerArray = (0..<array.count).flatMap { i -> [String] in
-        var removedArray = array
-        let element = removedArray.remove(at: i)
-        return [element] + combinations(removedArray).map { element + $0 }
-    }
-
-    return Set(answerArray)
-}
-
-//👋⭕️理解 OKAY
-func isPrime2(_ number: Int) -> Bool {
-    guard number > 1 else {
-        return false
-    }
-    guard number != 2 else {
-        return true
-    }
-    for i in 2..<number {
-        if number % i == 0 {
-            return false
-        }
-    }
-    return true
-}
-
-func solution1_1(_ numbers: String) -> Int {
-    let array = Array(numbers).map { String($0) }
-    let set_Int = Set(combinations(array).compactMap { Int($0) }) //入力された数字で作れる全ての数字をOptionalを剥がして出力
-    return set_Int.filter { isPrime2($0) }.count
-}
-
-print(solution1_1("17"))
+////👋❌理解 NOT OKAY (Now Studying Step)
+////🔥🔥[戦略] : Setを用いることで、重複をなくすことができる
+//func combinations(_ array: [String]) -> Set<String> {
+//    if array.count == 0 {
+//        return []
+//    }
+//
+//    //🔥Closureの活用を身につけること！
+//    let answerArray = (0..<array.count).flatMap { i -> [String] in
+//        var removedArray = array
+//        let element = removedArray.remove(at: i)
+//        return [element] + combinations(removedArray).map { element + $0 }
+//    }
+//
+//    return Set(answerArray)
+//}
+//
+////👋⭕️理解 OKAY
+//func isPrime2(_ number: Int) -> Bool {
+//    guard number > 1 else {
+//        return false
+//    }
+//    guard number != 2 else {
+//        return true
+//    }
+//    for i in 2..<number {
+//        if number % i == 0 {
+//            return false
+//        }
+//    }
+//    return true
+//}
+//
+//func solution1_1(_ numbers: String) -> Int {
+//    let array = Array(numbers).map { String($0) }
+//    let set_Int = Set(combinations(array).compactMap { Int($0) }) //入力された数字で作れる全ての数字をOptionalを剥がして出力
+//    return set_Int.filter { isPrime2($0) }.count
+//}
+//
+//print(solution1_1("17"))
 
 //
 ////Closure 練習
@@ -229,5 +281,21 @@ print(solution1_1("17"))
 //}
 //
 //print(combinations(["1", "7", "4"]))
+
+////for 文の中の　If文の処理プロセスに関する考察
+//
+//let number_select = ["2", "0", "4"].map { Int($0)! }
+//let check_list2 = [1, 1, 0]
+//
+//for i in 0..<number_select.count {
+//    if check_list2[i] == 0 {
+//        let select_idx = number_select[i]
+//        print("現在for文は　\(i)回目")
+//        print("選択した要素： \(select_idx)")
+//        print(check_list2)
+//    }
+//}
+////　🌈📝考察：for 文の中のif文は　必ず0から回るのではなく、条件を満たすときだけloopされることがわかる
+////          ❗️再帰関数を使う時、共に使われることが多いので、この仕組みをちゃんと理解しておくこと！
 
 
