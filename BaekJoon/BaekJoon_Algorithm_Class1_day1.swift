@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Day 1 : BaekJoon Algorithm Study
 //BaekJoon Num.1000 （足し算と引き算）
 let a = readLine()!
 let aLine = a.split(separator: " ").map { Double($0)! }
