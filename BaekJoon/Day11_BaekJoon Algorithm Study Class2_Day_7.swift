@@ -77,5 +77,11 @@ func binarySearch(_ array1: [Int], _ targetNum: Int ) -> Int {
     var startIdx = 0
     var endIdx = array1.count - 1
     
+    while startIdx <= endIdx {
+        let middle = (startIdx + endIdx) / 2
+        if targetNum > S
+        
+    }
+    
     return 0
 }

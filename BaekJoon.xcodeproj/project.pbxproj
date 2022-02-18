@@ -36,6 +36,7 @@
 		9486364527B012F000FD9E89 /* BaekJoon_Algorithm_Class1_day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day1.swift; sourceTree = "<group>"; };
 		94B5407627B26F70001807C6 /* Day4_BaekJoon_Algorithm_Class1_last and Class2_day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day4_BaekJoon_Algorithm_Class1_last and Class2_day1.swift"; sourceTree = "<group>"; };
 		94E0DDB327B122FD00F66814 /* BaekJoon_Algorithm_Class1_day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day2.swift; sourceTree = "<group>"; };
+		94E87B2B27BFB84D00292711 /* Day12_BaekJoon Algorithm Study Class2_Day_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day12_BaekJoon Algorithm Study Class2_Day_8.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 				9420442C27BA79DE00C8A7EB /* Day9_BaekJoon Algorithm Class2 day 5.swift */,
 				942E486A27BBC3DE00576BB8 /* Day10_BaekJoon Algorithm Class2 _day 6.swift */,
 				94564C7727BE6D190076F97D /* Day11_BaekJoon Algorithm Study Class2_Day_7.swift */,
+				94E87B2B27BFB84D00292711 /* Day12_BaekJoon Algorithm Study Class2_Day_8.swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
