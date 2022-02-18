@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Day 11 : BaekJoon Algorithm Study
 //BaekJoon Algorithm Study n.2805 (木切り) 重要度：🎖🎖🎖🎖
 // ９割以上自力で解けたので、やりがいを感じる😳🌱
 //‼️二分探索　と　媒介変数探索のアルゴリズム
