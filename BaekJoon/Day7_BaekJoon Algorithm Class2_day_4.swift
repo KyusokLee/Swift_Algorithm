@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Day 7 : BaekJoon Algorithm Study
 // Nested Functionの仕組みを理解する! 関数を入れ子構造にすることができる🎖
 // ‼️‼️もっと勉強すること！
 func outer (_ numA: Int, _ numB: Int) -> (Int, Int) -> Int {
