@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Day 9 : BaekJoon Algorithm Study
 //BaekJoon Algorithm Study n.1978 (素数探し)重要度：🎖🎖🎖
 //Bool　Typeを用いる方法も身に付けておくこと！
 
