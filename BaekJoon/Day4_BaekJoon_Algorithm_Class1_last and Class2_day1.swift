@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Day 4 : BaekJoon Algorithm Study
 //復讐📮BaekJoon Algorithm Study num.10809 (アルファベット探し)
 let line = Array(readLine()!)
 for i in Character("a").asciiValue!...Character("z").asciiValue! {
