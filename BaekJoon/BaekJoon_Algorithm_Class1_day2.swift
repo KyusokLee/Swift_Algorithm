@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Day 2 : BaekJoon Algorithm Study
 //BaekJoon Algorithm Study num.1330 整数の比較
 let line = readLine()!
 let lineArr = line.split(separator: " ")
@@ -108,3 +109,4 @@ if input5 == input5.sorted() {
 } else {
     print("mixed")
 }
+
