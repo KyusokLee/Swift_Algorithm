@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Day 6 : BaekJoon Algorithm Study
 //BaekJoon Algorithm Study n.2869 (かたつむりは上に上がりたい)
 //ceil関数：切り上げ
 //floor関数：切り捨て
