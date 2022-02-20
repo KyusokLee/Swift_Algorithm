@@ -1,5 +1,5 @@
 //
-//  Day8_Week1の復讐及びまとめ.swift
+//  Day8_Week1の復習及びまとめ.swift
 //  BaekJoon
 //
 //  Created by Kyus'lee on 2022/02/13.

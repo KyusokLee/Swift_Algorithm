@@ -189,12 +189,3 @@ let practice_3: [Any?] = [0, 1, 2, 3, nil, "a", "2"] //nilがあることからT
 //Typeの確認　復讐用
 let N_K1 = readLine()!.split(separator: " ") //Array<Substring>を生成
 print(type(of:N_K1))
-
-//Day 14: Week2: 一週間のアルゴリズムの整理と問題の復習
-//➡️昨日の復習
-//BaekJoon Algorithm Study n.1260 (DFS と BFS) 重要度：🎖🎖🎖🎖🎖🎖🎖
-// ‼️⚠️ BFSアルゴリズム　難しい。。
-// テストケース通過はしたが、効率的によくなかった。。
-// ⭐️‼️復習必修
-//⭕️🔥Googleで検索しながら、他の人のコードを参考にしたコード
-//　⭐️このスキルを自分のものにすること⭐️
