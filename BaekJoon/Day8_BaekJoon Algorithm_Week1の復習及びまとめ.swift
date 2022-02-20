@@ -7,7 +7,7 @@
 
 import Foundation
 
-//📝Day8. Week1: 一週間のアルゴリズムの整理と問題の復習
+//📚📝Day8. Week1: 一週間のアルゴリズムの整理と問題の復習 !
 //BaekJoon Algorithm Study Num.1157 (最も多く入力された文字の数）
 let word1 = readLine()!.uppercased()
 var dict1: [Character:Int] = [Character:Int]()
