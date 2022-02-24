@@ -288,7 +288,7 @@ func bfs_CountRelation(personA: Int, personB: Int) -> Int {
     return -1
 }
 
-//BaekJoon Algorithm Study n.2468 (安全な領域) 重要度：🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+//BaekJoon Algorithm Study n.2468 (安全な領域) 重要度：🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
 //連結要素を求めるアルゴリズムを活用したコード
 // コードはいい感じだと思うけど、なぜか値がおかしくなっている
 // ⚠️‼️途中の段階
