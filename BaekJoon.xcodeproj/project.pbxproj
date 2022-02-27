@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		9410856827C8FB3A00998B22 /* Day19_BaekJoon Algorithm Study Class2_Day 15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day19_BaekJoon Algorithm Study Class2_Day 15.swift"; sourceTree = "<group>"; };
 		9413123327B52A98003F77A1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		941558E827CB99C800B5E00A /* Day21_BaekJoon Algorithm Study Dynamic Programming Day 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day21_BaekJoon Algorithm Study Dynamic Programming Day 2.swift"; sourceTree = "<group>"; };
 		941968BF27CA481F00782C5A /* Day20_BaekJoon Algorithm Study Dynamic Programming Day 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day20_BaekJoon Algorithm Study Dynamic Programming Day 1.swift"; sourceTree = "<group>"; };
 		941AFF7227C3B2200073D770 /* Day15_BaekJoon Algorithm Study Class2_Day_11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day15_BaekJoon Algorithm Study Class2_Day_11.swift"; sourceTree = "<group>"; };
 		941C5CB127C5066E00403383 /* Day16_BaekJoon Algorithm Study Class2_Day_12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day16_BaekJoon Algorithm Study Class2_Day_12.swift"; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 				94310D6527C7A59000D387EF /* Day18_BaekJoon Algorithm Study Class2_Day_14.swift */,
 				9410856827C8FB3A00998B22 /* Day19_BaekJoon Algorithm Study Class2_Day 15.swift */,
 				941968BF27CA481F00782C5A /* Day20_BaekJoon Algorithm Study Dynamic Programming Day 1.swift */,
+				941558E827CB99C800B5E00A /* Day21_BaekJoon Algorithm Study Dynamic Programming Day 2.swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
