@@ -61,7 +61,7 @@ while true {
 print(cardQueue[0])
 
 //⬇️時間オーバーにならないコード
-これも時間オーバーになってしまう
+//これも時間オーバーになってしまう
 let numCase = Int(readLine()!)!
 var cardQueue = [Int]()
 

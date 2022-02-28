@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		940DFF0727CCE58F003C9FFE /* Day22_BaekJoon Algorithm Study 一週間の復習(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day22_BaekJoon Algorithm Study 一週間の復習(1).swift"; sourceTree = "<group>"; };
 		9410856827C8FB3A00998B22 /* Day19_BaekJoon Algorithm Study Class2_Day 15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day19_BaekJoon Algorithm Study Class2_Day 15.swift"; sourceTree = "<group>"; };
 		9413123327B52A98003F77A1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		941558E827CB99C800B5E00A /* Day21_BaekJoon Algorithm Study Dynamic Programming Day 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day21_BaekJoon Algorithm Study Dynamic Programming Day 2.swift"; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 				9410856827C8FB3A00998B22 /* Day19_BaekJoon Algorithm Study Class2_Day 15.swift */,
 				941968BF27CA481F00782C5A /* Day20_BaekJoon Algorithm Study Dynamic Programming Day 1.swift */,
 				941558E827CB99C800B5E00A /* Day21_BaekJoon Algorithm Study Dynamic Programming Day 2.swift */,
+				940DFF0727CCE58F003C9FFE /* Day22_BaekJoon Algorithm Study 一週間の復習(1).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;

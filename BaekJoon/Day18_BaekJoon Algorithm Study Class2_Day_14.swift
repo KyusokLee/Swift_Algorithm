@@ -243,9 +243,9 @@ for _ in 0..<prac1.count {
     print(prac1)
 }
 
-BaekJoon Algorithm Study n.2108 (統計学) 重要度：🎖🎖🎖🎖🎖🎖
-この書き方だと、Run Time Errorになる
-方法:１　関数を使った方法
+//BaekJoon Algorithm Study n.2108 (統計学) 重要度：🎖🎖🎖🎖🎖🎖
+//この書き方だと、Run Time Errorになる
+//方法:１　関数を使った方法
 
 let testNum = Int(readLine()!)!
 var dictNum = [Int: Int]()
