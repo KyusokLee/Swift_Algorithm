@@ -45,6 +45,7 @@
 		94564C7727BE6D190076F97D /* Day11_BaekJoon Algorithm Study Class2_Day_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day11_BaekJoon Algorithm Study Class2_Day_7.swift"; sourceTree = "<group>"; };
 		94610E4F27CF903D00C571A8 /* Day24_BaekJoon Algorithm Study 具現問題(1) + BFS深化問題(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day24_BaekJoon Algorithm Study 具現問題(1) + BFS深化問題(1).swift"; sourceTree = "<group>"; };
 		9466556027B611D300665C9C /* Day6_BaekJoon Algorithm Class2_day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day6_BaekJoon Algorithm Class2_day3.swift"; sourceTree = "<group>"; };
+		9469178527D4D89200D7CD8F /* Day28_BaekJoon Algorithm Study 具現問題(4).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day28_BaekJoon Algorithm Study 具現問題(4).swift"; sourceTree = "<group>"; };
 		9469ECED27B3FF2900695234 /* Day5_BaekJoon Algorithm Class_2 day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day5_BaekJoon Algorithm Class_2 day2.swift"; sourceTree = "<group>"; };
 		9486363B27B0122800FD9E89 /* BaekJoon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaekJoon; sourceTree = BUILT_PRODUCTS_DIR; };
 		9486363E27B0122800FD9E89 /* BaekJoon_Algorithm_Class1_day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day3.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 				944B104527D0CEA100C11011 /* Day25_BaekJoon Algorithm Study 具現問題(2) + Greedy (1).swift */,
 				94335D8527D22603005CA622 /* Day26_BaekJoon Algorithm Study 具現問題(3) + BackTracking(1).swift */,
 				941D72E127D386D100AB499F /* Day27_BaekJoon Algorithm Study 深化問題 Series - (1) Difficult BFS.swift */,
+				9469178527D4D89200D7CD8F /* Day28_BaekJoon Algorithm Study 具現問題(4).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
