@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		94790AB027D8795B00210A10 /* Day3_ paiza_ rank.B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day3_ paiza_ rank.B.swift"; sourceTree = "<group>"; };
 		949C37F327BD359C004164A5 /* Paiza */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Paiza; sourceTree = BUILT_PRODUCTS_DIR; };
 		949C37F627BD359C004164A5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				949C37F627BD359C004164A5 /* main.swift */,
+				94790AB027D8795B00210A10 /* Day3_ paiza_ rank.B.swift */,
 			);
 			path = Paiza;
 			sourceTree = "<group>";
