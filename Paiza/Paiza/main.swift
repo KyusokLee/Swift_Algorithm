@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+//⚠️Paizaの問題を解くときに注意すること：　＞＞　paizaでは、条件の設定が厳しいため、ちゃんと問題文の条件のみが入力されるように自分で設計しなければいけない‼️
 ////ライブスケジュール問題 Rank.C
 //let bandA_live = Int(readLine()!)!
 //var live_schedule = Array(repeating: Array(repeating: "x", count: 2), count: 31)
@@ -86,214 +88,70 @@ import Foundation
 //    }
 //}
 
-////山の頂上を探せ Rank.B
-//let mapSize = Int(readLine()!)!
-//var mapData = [[Int]]()
-//let directionRow = [0, 0, -1, 1]
-//let directionColumn = [1, -1, 0, 0]
-//var mountain_top = [Int]()
-//
-//for _ in 0..<mapSize {
-//    mapData += [readLine()!.split(separator: " ").map { Int(String($0))! }]
-//}
-//
-//for i in 0..<mapSize {
-//    for j in 0..<mapSize {
-//        if Find_Top(i, j) {
-//            mountain_top.append(mapData[i][j])
-//        }
-//    }
-//}
-//
-//mountain_top.sort(by: >)
-//
-//for i in 0..<mountain_top.count {
-//    print(mountain_top[i])
-//}
-//
-//func Find_Top(_ rowStart: Int, _ columnStart: Int) -> Bool {
-//    let compareValue = mapData[rowStart][columnStart]
-//    var isTop = true
-//
-//    for i in 0..<4 {
-//        let nextRow = rowStart + directionRow[i]
-//        let nextColumn = columnStart +  directionColumn[i]
-//
-//        if nextRow < 0 || nextRow >= mapSize || nextColumn < 0 || nextColumn >= mapSize {
-//            continue
-//        }
-//
-//        let compareRound = mapData[nextRow][nextColumn]
-//
-//        if compareValue <= compareRound {
-//            isTop = false
-//        }
-//    }
-//
-//    return isTop
-//}
-
-////マッピングゲーム　rank.B
-//// 非常に難しい問題
-//// 配列のIndexの処理に常に注意をすること！　Indexのエラーを探すのに結構時間がかかってしまった。
-//// もっと早く解決できたはず
-//let data = readLine()!.split(separator: " ").map { Int(String($0))! }
-//let turn_Count = data[0], ySize = data[1], xSize = data[2]
-//var board_Size = Array(repeating: Array(repeating: false, count: xSize), count: ySize)
-//var red_Have = Array(repeating: Array(repeating: false, count: xSize), count: ySize)
-//var blue_Have = Array(repeating: Array(repeating: false, count: xSize), count: ySize)
-//var green_Have = Array(repeating: Array(repeating: false, count: xSize), count: ySize)
-//let playersCount = 3
-//var red_Count = 0, blue_Count = 0, green_Count = 0
-//
-//for _ in 0..<turn_Count {
-//    for i in 0..<playersCount {
-//        let putData = readLine()!.split(separator: " ").map { Int(String($0))! }
-//        let x = putData[0], y = putData[1], massSize = putData[2]
-//
-//        putColor(i, x, y, massSize)
-//    }
-//}
-//
-//for i in 0..<ySize {
-//    for j in 0..<xSize {
-//        if red_Have[i][j] {
-//            red_Count += 1
-//        } else if blue_Have[i][j] {
-//            blue_Count += 1
-//        } else if green_Have[i][j] {
-//            green_Count += 1
-//        }
-//    }
-//}
-//
-//print("\(red_Count) \(blue_Count) \(green_Count)")
-//
-//func putColor(_ player: Int, _ xStart: Int, _ yStart: Int, _ mass: Int) {
-//    for i in yStart..<(yStart + mass) {
-//        guard i < ySize else {
-//            return
-//        }
-//        for j in xStart..<(xStart + mass) {
-//            guard j < xSize else {
-//                break
-//                //ここをreturnにしたせいで、passできなかった
-//            }
-//
-//            if board_Size[i][j] {
-//                checkingColor(player, i, j)
-//            } else {
-//                board_Size[i][j] = true
-//                if player == 0 {
-//                   red_Have[i][j] = true
-//                } else if player == 1 {
-//                    blue_Have[i][j] = true
-//                } else {
-//                   green_Have[i][j] = true
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//func checkingColor(_ player: Int, _ y: Int, _ x: Int) {
-//    if player == 0 {
-//        if blue_Have[y][x] {
-//            blue_Have[y][x] = false
-//            green_Have[y][x] = true
-//        } else if green_Have[y][x] {
-//            green_Have[y][x] = false
-//            blue_Have[y][x] = true
-//        } else if red_Have[y][x] {
-//            return
-//        }
-//
-//    } else if player == 1 {
-//        if red_Have[y][x] {
-//            red_Have[y][x] = false
-//            green_Have[y][x] = true
-//        } else if green_Have[y][x] {
-//            green_Have[y][x] = false
-//            red_Have[y][x] = true
-//        } else if blue_Have[y][x] {
-//            return
-//        }
-//
-//    } else {
-//        if red_Have[y][x] {
-//            red_Have[y][x] = false
-//            blue_Have[y][x] = true
-//        } else if blue_Have[y][x] {
-//            blue_Have[y][x] = false
-//            red_Have[y][x] = true
-//        } else if green_Have[y][x] {
-//            return
-//        }
-//    }
-//
-//}
-
-//ネットサーフィン rank.B
-// indexの扱いが複雑だった問題
-// 結構難しい問題 >> 文字列の処理が弱点であることを再び思い知った
+//楽しい暗号解読 rank.B
+//カフェが閉まったため、時間内に解けなかった...
 //⚠️途中の段階
-//‼️完全に理解するように、徹底的に復習すること！‼️
-let testCase = Int(readLine()!)!
-var pageArray = [String]()
-var commandArray2 = [String]()
-var beforePageIndex = 0, currentPageIndex = 0
-var resultPage: [String] = []
-var beforePage = ""
+let data = Array(readLine()!.split(separator: " ").map { String($0) })
+var check = [Character]()
 
-for _ in 0..<testCase {
-    var pageName = ""
-    let command = readLine()!
-    commandArray2.append(command)
-    
-    var command_dividing = command.split(separator: " ").map { String($0) }
-    
-    for _ in 0..<2 {
-        command_dividing.removeFirst()
+guard conditionCheck() else {
+    exit(0)
+}
+
+let testNum = Int(data[0])!, sentence = data[1]
+var alphabet_Array = [Character]()
+
+for i in Character("a").asciiValue!...Character("z").asciiValue! {
+    let alphabet = Character(UnicodeScalar(i))
+    alphabet_Array.append(alphabet)
+}
+let arabia: [Character] = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", " "]
+
+let compare = readLine()!.split(separator: " ").map { String($0) }
+
+for i in 0..<compare.count {
+    if !compareCheck(compare[i]) {
+        exit(0)
     }
+}
+
+
+
+
+
+
+
+
+
+func conditionCheck() -> Bool {
+    let noPossible = true
     
-    if command != "use the back button" {
-        pageName = command_dividing.joined(separator: " ")
-        pageArray.append(pageName)
+    if Character(data[0]).wholeNumberValue! < 0 || Character(data[0]).wholeNumberValue! > 100 {
+        return false
     }
-}
 
-for i in 0..<commandArray2.count {
-    netSurfing(commandArray2[i])
-}
+    if data[1].count != 26 {
+        return false
+    }
 
-for i in 0..<resultPage.count {
-    print(resultPage[i])
-}
-
-func netSurfing(_ string: String ) {
-    if string.contains("go to") {
-        for i in 0..<pageArray.count {
-            if string.contains(pageArray[i]) {
-                resultPage.append(pageArray[i])
-                break
-            }
-        }
-        
-        beforePageIndex = currentPageIndex - 1
-            
-        if beforePageIndex < 0 {
-            beforePageIndex = 0
-            beforePage = resultPage[beforePageIndex]
+    for i in data[1] {
+        if !check.contains(i) {
+            check.append(i)
         } else {
-            //ここがエラーが発生するらしいだね...
-            beforePage = resultPage[beforePageIndex]
+            return false
         }
-        print("beforePage = \(beforePage)")
-        currentPageIndex += 1
-        
-    } else if string.contains("use the") {
-        resultPage.append(beforePage)
-        currentPageIndex = beforePageIndex
-        
     }
+    
+    return noPossible
+}
+
+func compareCheck(_ str: String) -> Bool {
+    var noPossible = true
+    
+    for i in str {
+        if !arabia.contains(i) && !alphabet_Array.contains(i) {
+            noPossible = false
+        }
+    }
+    return noPossible
 }
