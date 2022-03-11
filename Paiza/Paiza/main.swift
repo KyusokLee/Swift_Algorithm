@@ -8,8 +8,9 @@
 import Foundation
 
 
-//⚠️Paizaの問題を解くときに注意すること：　＞＞　paizaでは、条件の設定が厳しいため、ちゃんと問題文の条件のみが入力されるように自分で設計しなければいけない‼️
+////⚠️Paizaの問題を解くときに注意すること：　＞＞　paizaでは、条件の設定が厳しいため、ちゃんと問題文の条件のみが入力されるように自分で設計しなければいけない‼️
 ////ライブスケジュール問題 Rank.C
+//
 //let bandA_live = Int(readLine()!)!
 //var live_schedule = Array(repeating: Array(repeating: "x", count: 2), count: 31)
 //var index = 0
@@ -118,7 +119,7 @@ for _ in 0..<testNum {
         if !compareCheck(compare[i]) {
             exit(0)
         }
-        
+
         compare[i] = changing(compare[i])
     }
 }
@@ -127,7 +128,7 @@ print(compare.joined(separator: " "))
 
 func conditionCheck() -> Bool {
     let noPossible = true
-    
+
     if Int(data[0])! < 0 || Int(data[0])! > 100 {
         return false
     }
@@ -143,19 +144,19 @@ func conditionCheck() -> Bool {
             return false
         }
     }
-    
+
     return noPossible
 }
 
 func compareCheck(_ str: String) -> Bool {
     let noPossible = true
-    
+
     for i in str {
         if i != " " && !alphabet_Array.contains(i) {
             return false
         }
     }
-    
+
     return noPossible
 }
 
@@ -163,7 +164,7 @@ func changing(_ str: String) -> String {
     let toChange = Array(str)
     var newString = ""
     var index = 0
-    
+
     for i in 0..<toChange.count {
         if sentence.contains(toChange[i]) {
             index = sentence.firstIndex(of: toChange[i])!
