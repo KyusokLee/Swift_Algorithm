@@ -151,9 +151,9 @@ for i in 0..<peopleNum {
 
 print(rankArr.map{ String($0) }.joined(separator: " "))
 
-BaekJoon Algorithm Study n.1463 (1にさせる) 重要度：🎖🎖🎖🎖🎖🎖🎖
- Dynamic Programming
-❗️このコードだと、エラーが発生する。。なぜだろう。。
+//BaekJoon Algorithm Study n.1463 (1にさせる) 重要度：🎖🎖🎖🎖🎖🎖🎖
+// Dynamic Programming
+//❗️このコードだと、エラーが発生する。。なぜだろう。。
 func dp_make1() -> Int {
     let num = Int(readLine()!)!
 

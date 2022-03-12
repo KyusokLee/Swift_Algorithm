@@ -189,3 +189,16 @@ let practice_3: [Any?] = [0, 1, 2, 3, nil, "a", "2"] //nilがあることからT
 //Typeの確認　復讐用
 let N_K1 = readLine()!.split(separator: " ") //Array<Substring>を生成
 print(type(of:N_K1))
+
+//📝ここからは、明日Day32の復習となる
+//BaekJoon Algorithm Study n.14891 (歯車) 重要度：🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+
+//BaekJoon Algorithm Study n.11559 (ぷよぷよ) 重要度：🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+
+//BaekJoon Algorithm Study n.14503 (ロボット掃除機) 重要度：🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+
+//BaekJoon Algorithm Study n.1316 (グループ単語チェック) 重要度：🎖🎖🎖🎖
+
+//BaekJoon Algorithm Study n. 14500 (テトロミノ)　重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+
+//BaekJoon Algorithm Study n.15649 (NとM (1))  重要度:🎖🎖🎖🎖🎖🎖
