@@ -112,6 +112,7 @@ func dfs(startRow: Int, startColumn: Int) {
 
 //BaekJoon Algoithm Study n.2164 (カードのルール２)
 // 可能であれば、exit(0)を使わない方が処理時間を減らせる
+
 let N = Int(readLine()!)!
 if N == 1 {
     print("1")
