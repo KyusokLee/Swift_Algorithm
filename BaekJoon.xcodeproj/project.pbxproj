@@ -32,6 +32,7 @@
 		941C5CB127C5066E00403383 /* Day16_BaekJoon Algorithm Study Class2_Day_12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day16_BaekJoon Algorithm Study Class2_Day_12.swift"; sourceTree = "<group>"; };
 		941D72E127D386D100AB499F /* Day27_BaekJoon Algorithm Study 深化問題 Series - (1) Difficult BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day27_BaekJoon Algorithm Study 深化問題 Series - (1) Difficult BFS.swift"; sourceTree = "<group>"; };
 		941EB5F727DC7F62002A2F65 /* Day31_BaekJoon Algorithm Study 一週間の復習.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day31_BaekJoon Algorithm Study 一週間の復習.swift"; sourceTree = "<group>"; };
+		941EB5F827DCACA8002A2F65 /* Day32_BaekJoon Algorithm Study 一週間の復習(2).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day32_BaekJoon Algorithm Study 一週間の復習(2).swift"; sourceTree = "<group>"; };
 		9420442C27BA79DE00C8A7EB /* Day9_BaekJoon Algorithm Class2 day 5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day9_BaekJoon Algorithm Class2 day 5.swift"; sourceTree = "<group>"; };
 		9423952727B7D25E001201E6 /* Day7_BaekJoon Algorithm Class2_day_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day7_BaekJoon Algorithm Class2_day_4.swift"; sourceTree = "<group>"; };
 		94280BFC27B9022C00256736 /* Day8_BaekJoon Algorithm_Week1の復習及びまとめ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day8_BaekJoon Algorithm_Week1の復習及びまとめ.swift"; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 				943CA69127D61A3D00BA3398 /* Day29_BaekJoon Algorithm Study 具現問題(5).swift */,
 				942862D827D772BC00A8C00C /* Day30_BaekJoon Algorithm Study 具現問題(6).swift */,
 				941EB5F727DC7F62002A2F65 /* Day31_BaekJoon Algorithm Study 一週間の復習.swift */,
+				941EB5F827DCACA8002A2F65 /* Day32_BaekJoon Algorithm Study 一週間の復習(2).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
