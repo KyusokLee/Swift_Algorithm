@@ -89,88 +89,90 @@ import Foundation
 //    }
 //}
 
-//楽しい暗号解読 rank.B
-//カフェが閉まったため、時間内に解けなかった...
-let data = Array(readLine()!.split(separator: " ").map { String($0) })
-var check = [Character]()
+////楽しい暗号解読 rank.B
+////カフェが閉まったため、時間内に解けなかった...
+//let data = Array(readLine()!.split(separator: " ").map { String($0) })
+//var check = [Character]()
+//
+//guard conditionCheck() else {
+//    exit(0)
+//}
+//
+//let testNum = Int(data[0])!, sentence = Array(data[1])
+//var alphabet_Array = [Character]()
+//
+//for i in Character("a").asciiValue!...Character("z").asciiValue! {
+//    let alphabet = Character(UnicodeScalar(i))
+//    alphabet_Array.append(alphabet)
+//}
+//
+//let fullString = readLine()!
+//var compare = fullString.split(separator: " ").map { String($0) }
+//let compare_firstOne = Array(compare[0])[0]
+//
+//if fullString.count < 1 || fullString.count > 1000 ||  compare_firstOne == " " {
+//    exit(0)
+//}
+//
+//for _ in 0..<testNum {
+//    for i in 0..<compare.count {
+//        if !compareCheck(compare[i]) {
+//            exit(0)
+//        }
+//
+//        compare[i] = changing(compare[i])
+//    }
+//}
+//
+//print(compare.joined(separator: " "))
+//
+//func conditionCheck() -> Bool {
+//    let noPossible = true
+//
+//    if Int(data[0])! < 0 || Int(data[0])! > 100 {
+//        return false
+//    }
+//
+//    if data[1].count != 26 {
+//        return false
+//    }
+//
+//    for i in data[1] {
+//        if !check.contains(i) {
+//            check.append(i)
+//        } else {
+//            return false
+//        }
+//    }
+//
+//    return noPossible
+//}
+//
+//func compareCheck(_ str: String) -> Bool {
+//    let noPossible = true
+//
+//    for i in str {
+//        if i != " " && !alphabet_Array.contains(i) {
+//            return false
+//        }
+//    }
+//
+//    return noPossible
+//}
+//
+//func changing(_ str: String) -> String {
+//    let toChange = Array(str)
+//    var newString = ""
+//    var index = 0
+//
+//    for i in 0..<toChange.count {
+//        if sentence.contains(toChange[i]) {
+//            index = sentence.firstIndex(of: toChange[i])!
+//            newString += String(alphabet_Array[index])
+//        }
+//    }
+//
+//    return newString
+//}
 
-guard conditionCheck() else {
-    exit(0)
-}
 
-let testNum = Int(data[0])!, sentence = Array(data[1])
-var alphabet_Array = [Character]()
-
-for i in Character("a").asciiValue!...Character("z").asciiValue! {
-    let alphabet = Character(UnicodeScalar(i))
-    alphabet_Array.append(alphabet)
-}
-
-let fullString = readLine()!
-var compare = fullString.split(separator: " ").map { String($0) }
-let compare_firstOne = Array(compare[0])[0]
-
-if fullString.count < 1 || fullString.count > 1000 ||  compare_firstOne == " " {
-    exit(0)
-}
-
-for _ in 0..<testNum {
-    for i in 0..<compare.count {
-        if !compareCheck(compare[i]) {
-            exit(0)
-        }
-
-        compare[i] = changing(compare[i])
-    }
-}
-
-print(compare.joined(separator: " "))
-
-func conditionCheck() -> Bool {
-    let noPossible = true
-
-    if Int(data[0])! < 0 || Int(data[0])! > 100 {
-        return false
-    }
-
-    if data[1].count != 26 {
-        return false
-    }
-
-    for i in data[1] {
-        if !check.contains(i) {
-            check.append(i)
-        } else {
-            return false
-        }
-    }
-
-    return noPossible
-}
-
-func compareCheck(_ str: String) -> Bool {
-    let noPossible = true
-
-    for i in str {
-        if i != " " && !alphabet_Array.contains(i) {
-            return false
-        }
-    }
-
-    return noPossible
-}
-
-func changing(_ str: String) -> String {
-    let toChange = Array(str)
-    var newString = ""
-    var index = 0
-
-    for i in 0..<toChange.count {
-        if sentence.contains(toChange[i]) {
-            index = sentence.firstIndex(of: toChange[i])!
-            newString += String(alphabet_Array[index])
-        }
-    }
-
-    return newString
-}
