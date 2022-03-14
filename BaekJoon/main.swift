@@ -190,9 +190,9 @@ import Foundation
 //let N_K1 = readLine()!.split(separator: " ") //Array<Substring>を生成
 //print(type(of:N_K1))
 
-//📝ここからは、明日の復習になる❗️
-//BaekJoon Algorithm Study n.14503 (ロボット掃除機) 重要度：🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
 
+//📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n. 14500 (テトロミノ)　重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
 
-//BaekJoon Algorithm Study n.15649 (NとM (1))  重要度:🎖🎖🎖🎖🎖🎖
+//BaekJoon Algorithm Study n.11725 (treeの親探し)
+
