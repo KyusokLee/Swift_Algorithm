@@ -175,4 +175,6 @@ import Foundation
 //    return newString
 //}
 
+//試験の作成 rank.A
+
 
