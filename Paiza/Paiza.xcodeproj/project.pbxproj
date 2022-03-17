@@ -26,6 +26,7 @@
 		940B604527DA3E210068E79F /* Day4 _ paiza_rank.B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day4 _ paiza_rank.B.swift"; sourceTree = "<group>"; };
 		940B604627DA3E880068E79F /* Day2 _ paiza_rank.B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day2 _ paiza_rank.B.swift"; sourceTree = "<group>"; };
 		940DCBA127DE37410083DDC9 /* Day6 _paiza_rank.C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day6 _paiza_rank.C.swift"; sourceTree = "<group>"; };
+		94131DEC27E3528400A82504 /* Day 9_Paiza_rank.C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 9_Paiza_rank.C.swift"; sourceTree = "<group>"; };
 		942E446027E228C1007C64A0 /* Day 8_Paiza_rank.A and rank.B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 8_Paiza_rank.A and rank.B.swift"; sourceTree = "<group>"; };
 		94790AB027D8795B00210A10 /* Day3_ paiza_ rank.B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day3_ paiza_ rank.B.swift"; sourceTree = "<group>"; };
 		947996B727DB60A1001282BE /* Day5 _ paiza_rank.B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day5 _ paiza_rank.B.swift"; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				940DCBA127DE37410083DDC9 /* Day6 _paiza_rank.C.swift */,
 				948231BC27E0650F00DAAC5B /* Day7_Paiza_rank.A.swift */,
 				942E446027E228C1007C64A0 /* Day 8_Paiza_rank.A and rank.B.swift */,
+				94131DEC27E3528400A82504 /* Day 9_Paiza_rank.C.swift */,
 			);
 			path = Paiza;
 			sourceTree = "<group>";
