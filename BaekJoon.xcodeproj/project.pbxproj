@@ -42,6 +42,7 @@
 		942CF56127CE3B38007046EE /* Day23_BaekJoon Algorithm Study 一週間の復習(2) + DFS深化問題(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day23_BaekJoon Algorithm Study 一週間の復習(2) + DFS深化問題(1).swift"; sourceTree = "<group>"; };
 		942E486A27BBC3DE00576BB8 /* Day10_BaekJoon Algorithm Class2 _day 6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day10_BaekJoon Algorithm Class2 _day 6.swift"; sourceTree = "<group>"; };
 		94310D6527C7A59000D387EF /* Day18_BaekJoon Algorithm Study Class2_Day_14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day18_BaekJoon Algorithm Study Class2_Day_14.swift"; sourceTree = "<group>"; };
+		9432F78027E4CD32002F322D /* Day35_BaekJoon Algorithm Study DFS, BFS シリーズ(2).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day35_BaekJoon Algorithm Study DFS, BFS シリーズ(2).swift"; sourceTree = "<group>"; };
 		94335D8527D22603005CA622 /* Day26_BaekJoon Algorithm Study 具現問題(3) + BackTracking(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day26_BaekJoon Algorithm Study 具現問題(3) + BackTracking(1).swift"; sourceTree = "<group>"; };
 		9433E80027C13188006E033A /* Day13_BaekJoon Algorithm Study Class2_Day_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day13_BaekJoon Algorithm Study Class2_Day_9.swift"; sourceTree = "<group>"; };
 		943CA69127D61A3D00BA3398 /* Day29_BaekJoon Algorithm Study 具現問題(5).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day29_BaekJoon Algorithm Study 具現問題(5).swift"; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				941EB5F827DCACA8002A2F65 /* Day32_BaekJoon Algorithm Study 一週間の復習(2).swift */,
 				94280C1627DF61BE0010E078 /* Day33_BaekJoon Algorithm Study 一週間の復習(3) + BFS, BitMasking.swift */,
 				94131DEB27E3264800A82504 /* Day34_BaekJoon Algorithm Study DFS, BFS シリーズ(1).swift */,
+				9432F78027E4CD32002F322D /* Day35_BaekJoon Algorithm Study DFS, BFS シリーズ(2).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;

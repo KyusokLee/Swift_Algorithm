@@ -192,9 +192,6 @@ print(type(of:N_K1))
 
 //📝➡️ここからは、明日から
 
-//BaekJoon Algorithm Study n.1753 (最短経路) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
-
-
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
 
 //⬇️復習まだ、やってない問題
