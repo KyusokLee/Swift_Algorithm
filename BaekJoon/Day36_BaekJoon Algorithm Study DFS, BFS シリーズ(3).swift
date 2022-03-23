@@ -235,7 +235,7 @@ func bfs_findDistrict(_ rowStart: Int, _ columnStart: Int, _ targetColor: Charac
 // 1, 2, 3, 4, 5, 6　マスにいる魚の大きさ 7と8はない
 let mapSize = Int(readLine()!)!
 var map = [[Int]]()
-let directionRow = [0, 0, -1, 1]
+let directionRow = [0, 0, 1, -1]
 let directionColumn = [1, -1, 0, 0]
 var sharkLocate = (-1, -1, -1)
 var result = 0
@@ -268,6 +268,7 @@ func bfs_sharkMoving(_ rowStart: Int, _ columnStart: Int, _ size: Int) -> Bool {
     
     while index < neededCheckQueue.count {
         let (currentRow, currentColumn, distanceCount) = neededCheckQueue[index]
+        index += 1
         
         if distanceCount > distance {
             continue
@@ -289,8 +290,6 @@ func bfs_sharkMoving(_ rowStart: Int, _ columnStart: Int, _ size: Int) -> Bool {
             visited[nextRow][nextColumn] = true
             neededCheckQueue.append((nextRow, nextColumn, distanceCount + 1))
         }
-        
-        index += 1
     }
     
     if fishArray.isEmpty {
