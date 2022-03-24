@@ -58,6 +58,7 @@
 		9466556027B611D300665C9C /* Day6_BaekJoon Algorithm Class2_day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day6_BaekJoon Algorithm Class2_day3.swift"; sourceTree = "<group>"; };
 		9469178527D4D89200D7CD8F /* Day28_BaekJoon Algorithm Study 具現問題(4).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day28_BaekJoon Algorithm Study 具現問題(4).swift"; sourceTree = "<group>"; };
 		9469ECED27B3FF2900695234 /* Day5_BaekJoon Algorithm Class_2 day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day5_BaekJoon Algorithm Class_2 day2.swift"; sourceTree = "<group>"; };
+		947AEE8727ECA4BC00932768 /* Day38_BaekJoon Algorithm Study DFS, BFS シリーズ(5).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day38_BaekJoon Algorithm Study DFS, BFS シリーズ(5).swift"; sourceTree = "<group>"; };
 		9486363B27B0122800FD9E89 /* BaekJoon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaekJoon; sourceTree = BUILT_PRODUCTS_DIR; };
 		9486363E27B0122800FD9E89 /* BaekJoon_Algorithm_Class1_day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day3.swift; sourceTree = "<group>"; };
 		9486364527B012F000FD9E89 /* BaekJoon_Algorithm_Class1_day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day1.swift; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 				944D4F5927EA133B004C164C /* Day36_BaekJoon Algorithm Study DFS, BFS シリーズ(3).swift */,
 				940D121927EB43B100DBA045 /* 位相ソート and 最長部分数列(LIS)アルゴリズム -- 未完成版.swift */,
 				940D121A27EB448300DBA045 /* Day37_BaekJoon Algorithm Study DFS, BFS シリーズ(4) + LISアルゴリズム.swift */,
+				947AEE8727ECA4BC00932768 /* Day38_BaekJoon Algorithm Study DFS, BFS シリーズ(5).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;

@@ -190,6 +190,12 @@ let practice_3: [Any?] = [0, 1, 2, 3, nil, "a", "2"] //nilがあることからT
 let N_K1 = readLine()!.split(separator: " ") //Array<Substring>を生成
 print(type(of:N_K1))
 
+//　⚠️‼️ enumerated と　filter　と　mapを用いてindexを求める方法
+var testArray = ["*", "S", "D", "*"]
+let x = testArray.enumerated().filter {$0.1 == "*" }.map { $0.0 }
+print(x)
+
+
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
 
