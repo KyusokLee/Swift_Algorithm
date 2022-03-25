@@ -63,6 +63,7 @@
 		9486363E27B0122800FD9E89 /* BaekJoon_Algorithm_Class1_day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day3.swift; sourceTree = "<group>"; };
 		9486364527B012F000FD9E89 /* BaekJoon_Algorithm_Class1_day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day1.swift; sourceTree = "<group>"; };
 		94B5407627B26F70001807C6 /* Day4_BaekJoon_Algorithm_Class1_last and Class2_day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day4_BaekJoon_Algorithm_Class1_last and Class2_day1.swift"; sourceTree = "<group>"; };
+		94DDA67E27EDF746002A1167 /* Day39_BaekJoon Algorithm Study DFS, BFS シリーズ(6).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day39_BaekJoon Algorithm Study DFS, BFS シリーズ(6).swift"; sourceTree = "<group>"; };
 		94E0DDB327B122FD00F66814 /* BaekJoon_Algorithm_Class1_day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day2.swift; sourceTree = "<group>"; };
 		94E87B2B27BFB84D00292711 /* Day12_BaekJoon Algorithm Study Class2_Day_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day12_BaekJoon Algorithm Study Class2_Day_8.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +138,7 @@
 				940D121927EB43B100DBA045 /* 位相ソート and 最長部分数列(LIS)アルゴリズム -- 未完成版.swift */,
 				940D121A27EB448300DBA045 /* Day37_BaekJoon Algorithm Study DFS, BFS シリーズ(4) + LISアルゴリズム.swift */,
 				947AEE8727ECA4BC00932768 /* Day38_BaekJoon Algorithm Study DFS, BFS シリーズ(5).swift */,
+				94DDA67E27EDF746002A1167 /* Day39_BaekJoon Algorithm Study DFS, BFS シリーズ(6).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
