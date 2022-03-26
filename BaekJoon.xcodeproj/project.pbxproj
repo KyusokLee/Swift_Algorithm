@@ -66,6 +66,7 @@
 		94DDA67E27EDF746002A1167 /* Day39_BaekJoon Algorithm Study DFS, BFS シリーズ(6).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day39_BaekJoon Algorithm Study DFS, BFS シリーズ(6).swift"; sourceTree = "<group>"; };
 		94E0DDB327B122FD00F66814 /* BaekJoon_Algorithm_Class1_day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaekJoon_Algorithm_Class1_day2.swift; sourceTree = "<group>"; };
 		94E87B2B27BFB84D00292711 /* Day12_BaekJoon Algorithm Study Class2_Day_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day12_BaekJoon Algorithm Study Class2_Day_8.swift"; sourceTree = "<group>"; };
+		94FA225A27EF2CC6003469E7 /* Day40_BaekJoon Algorithm Study DFS, BFS シリーズ(7).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day40_BaekJoon Algorithm Study DFS, BFS シリーズ(7).swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +140,7 @@
 				940D121A27EB448300DBA045 /* Day37_BaekJoon Algorithm Study DFS, BFS シリーズ(4) + LISアルゴリズム.swift */,
 				947AEE8727ECA4BC00932768 /* Day38_BaekJoon Algorithm Study DFS, BFS シリーズ(5).swift */,
 				94DDA67E27EDF746002A1167 /* Day39_BaekJoon Algorithm Study DFS, BFS シリーズ(6).swift */,
+				94FA225A27EF2CC6003469E7 /* Day40_BaekJoon Algorithm Study DFS, BFS シリーズ(7).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;

@@ -195,7 +195,6 @@ var testArray = ["*", "S", "D", "*"]
 let x = testArray.enumerated().filter {$0.1 == "*" }.map { $0.0 }
 print(x)
 
-
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
 
