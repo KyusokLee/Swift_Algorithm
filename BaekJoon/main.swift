@@ -195,6 +195,59 @@ var testArray = ["*", "S", "D", "*"]
 let x = testArray.enumerated().filter {$0.1 == "*" }.map { $0.0 }
 print(x)
 
+// 🔥IMPORTANT Bit Masking Operator　練習🔥
+var testArray33 = [2, 3, 4, 5, 6]
+let idx1 = 1 << testArray33[0]
+let idx2 = 1 << testArray33[1]
+let idx3 = 1 << testArray33[2]
+print(idx1)
+print(idx2)
+print(idx3)
+
+if idx1 & idx2 == 0 {
+    print("yes")
+}
+
+let a33 = 4
+let b33 = 444
+let c33 = a33 & b33
+print(c) // 共通の数字 4 が出力される
+
+// 下記のif文は実行されない
+if a33 & b33 == 1 {
+    print("have same Bit") //共通である部分があるため、出力されない
+}
+// 完全に同じ値であれば　1(True) , 共通の部分が完全にないときは 0(False)  また、共通の部分があれば 0も1もならない
+
+//共通の部分があるときは.....
+if a33 & b33 != 1 {
+    print("have same Bit") // 出力: have same Bit
+}
+
+if a33 & b33 != 0 {
+    print("have same Bit") // 出力: have same Bit
+}
+
+let d33 = 44
+let e33 = 444
+let dANDe = d33 & e33
+print(dANDe) //44が出力される
+
+// OR 演算子 ( | 演算子 ) は、二つのBitを結合する演算子である
+
+// ex) 101 (5) OR 1000 (8) = 1101 (13)
+let practiceBit1 = 5
+let practiceBit2 = 8
+let Bit1ORBit2 = practiceBit1 | practiceBit2
+print(Bit1ORBit2) //13が出力される
+
+// ex) 111 (7) OR 100 (4) = 111 (7)
+let pracBit3 = 7
+let pracBit4 = 4
+let prac3OR4 = pracBit3 | pracBit4
+print(prac3OR4) //7が出力される
+
+
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
 
