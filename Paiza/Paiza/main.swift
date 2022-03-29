@@ -174,3 +174,89 @@ import Foundation
 //
 //    return newString
 //}
+
+//読書の課題 rank.A
+//　高難度問題
+//⚠️途中の段階
+typealias bookInfo = (page: Int, day: Int)
+let data = readLine()!.split(separator: " ")
+var books = 0, vacationDays = 0
+if !conditionCheck() {
+    exit(0)
+}
+var bookArray = [bookInfo]()
+var maxPages = 0
+
+for _ in 0..<books {
+    let bookData = readLine()!.split(separator: " ")
+    var pages = 0, expectDays = 0
+    
+    if let intPage = Int(bookData[0]) {
+        if intPage < 1 || intPage > 1000 {
+            exit(0)
+        } else {
+            if let intDays = Int(bookData[1]) {
+                if intDays < 1 || intDays > vacationDays {
+                    exit(0)
+                } else {
+                    pages = intPage
+                    expectDays = intDays
+                }
+            }
+        }
+    } else {
+        exit(0)
+    }
+    
+    bookArray.append((pages, expectDays))
+}
+
+var checked = Array(repeating: false, count: books)
+var tempPages = 0
+
+print(dfs_select(0, 0, 0))
+
+//アルゴリズムの設計がちょっと難しかった
+func dfs_select(_ pages: Int, _ days: Int, _ index: Int) -> Int {
+    if days > vacationDays {
+        return 0
+    }
+    
+    for i in index..<bookArray.count {
+        if !checked[i] {
+            tempPages += bookArray[i].page
+            checked[i] = true
+            if dfs_select(pages + bookArray[i].page, days + bookArray[i].day, index + 1) == 0 {
+                tempPages -= bookArray[i].page
+                maxPages = max(maxPages, tempPages)
+                checked[i] = false
+            }
+            checked[i] = false
+            tempPages -= bookArray[i].page
+        }
+    }
+    
+    return maxPages
+}
+
+func conditionCheck() -> Bool {
+    
+    if let intBook = Int(data[0]) {
+        if intBook < 1 || intBook > 1000 {
+            return false
+        } else {
+            if let intDays = Int(data[1]) {
+                if intDays < 1 || intDays > 100 {
+                    return false
+                } else {
+                    books = intBook
+                    vacationDays = intDays
+                }
+            }
+        }
+    } else {
+        return false
+    }
+
+    return true
+}
