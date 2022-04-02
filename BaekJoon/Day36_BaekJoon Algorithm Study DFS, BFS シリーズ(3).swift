@@ -105,7 +105,7 @@ extension Heap where T: Comparable {
 //最小Heapを再現するアルゴリズムコード
 
 
-//⚠️‼️このコードが特に難しかった
+//⚠️‼️このコードが特に難しかった (最小Heapを実現)
 struct EdgeData: Comparable {
     static func < (left: EdgeData, right: EdgeData) -> Bool {
         left.cost < right.cost
