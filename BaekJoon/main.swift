@@ -247,6 +247,7 @@ import Foundation
 //let prac3OR4 = pracBit3 | pracBit4
 //print(prac3OR4) //7が出力される
 
+
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
 
