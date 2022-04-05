@@ -174,3 +174,95 @@ import Foundation
 //
 //    return newString
 //}
+
+//お菓子の詰め合わせ rank.A
+// 出力結果が間違っているところがあったコード
+// 単純にお釣りが最小になるときを選ぶのではなく、itemの個数がmaxになることを優先する必要があった
+//⚠️まだ、途中の段階!!!
+
+typealias Result = (itemCount: Int, money: Int)
+let data = readLine()!.split(separator: " ").map { String($0) }
+var items = 0, maxMoney = 0
+var itemArray = [Int]()
+guard conditionCheck1() else {
+    exit(0)
+}
+
+var result = maxMoney
+var dp = [[Result]](repeating: [Result](repeating: (0, 0), count: maxMoney + 1), count: items)
+
+for _ in 0..<items {
+    let itemData = readLine()!
+    var intData = 0
+    if !conditionCheck2(itemData, &intData) {
+        exit(0)
+    }
+
+    itemArray.append(intData)
+}
+
+var maxCount = 0
+
+for i in 0..<items {
+    for j in 1..<maxMoney + 1 {
+        if i == 0 {
+            if j >= itemArray[i] {
+                dp[i][j] = (1, itemArray[i])
+            }
+        } else {
+            if j < itemArray[i] {
+                dp[i][j] = dp[i - 1][j]
+            } else {
+                if dp[i - 1][j].money + itemArray[i] >= j {
+                    dp[i][j] = (dp[i - 1][j].itemCount, max(dp[i - 1][j].money, itemArray[i] + dp[i - 1][j - itemArray[i]].money))
+                    maxCount = max(maxCount, dp[i][j].itemCount)
+                } else {
+                    dp[i][j] = (dp[i - 1][j].itemCount + 1, max(dp[i - 1][j].money, itemArray[i] + dp[i - 1][j - itemArray[i]].money))
+                    maxCount = max(maxCount, dp[i][j].itemCount)
+                }
+            }
+        }
+    }
+}
+print(dp)
+let filteringDP = dp[items - 1].filter { $0.itemCount == maxCount }.sorted(by: { $0.money > $1.money })
+if filteringDP.count == 1 {
+    print(maxMoney - filteringDP[0].money)
+} else {
+    print(maxMoney - dp[items - 1][maxMoney].money)
+}
+
+func conditionCheck1() -> Bool {
+    if let intItem = Int(data[0]) {
+        if intItem < 1 || intItem > 20 {
+            return false
+        } else {
+            if let intMoney = Int(data[1]) {
+                if intMoney <= 0 || intMoney > 5000 {
+                    return false
+                } else {
+                    items = intItem
+                    maxMoney = intMoney
+                }
+            }
+        }
+    } else {
+        return false
+    }
+    
+    return true
+}
+
+func conditionCheck2(_ check: String, _ mutate: inout Int) -> Bool {
+    if let intCheck = Int(check) {
+        if intCheck <= 0 || intCheck > 5000 {
+            return false
+        } else {
+            mutate = intCheck
+        }
+    } else {
+        return false
+    }
+    
+    return true
+}
