@@ -35,6 +35,7 @@
 		948231BC27E0650F00DAAC5B /* Day7_Paiza_rank.A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7_Paiza_rank.A.swift; sourceTree = "<group>"; };
 		949C37F327BD359C004164A5 /* Paiza */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Paiza; sourceTree = BUILT_PRODUCTS_DIR; };
 		949C37F627BD359C004164A5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		94C18EED27FD7BFB006052C9 /* Day 12_Paiza_rank.A 1問.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 12_Paiza_rank.A 1問.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 				94131DEC27E3528400A82504 /* Day 9_Paiza_rank.C.swift */,
 				940FB08B27F1E744007CAFA7 /* Day 10_Paiza_rank.A 1問.swift */,
 				9464338027F48444008E71AD /* Day 11_Paiza_rank.A 2問.swift */,
+				94C18EED27FD7BFB006052C9 /* Day 12_Paiza_rank.A 1問.swift */,
 			);
 			path = Paiza;
 			sourceTree = "<group>";
