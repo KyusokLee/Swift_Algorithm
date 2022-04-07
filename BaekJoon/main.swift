@@ -247,7 +247,24 @@ import Foundation
 //let prac3OR4 = pracBit3 | pracBit4
 //print(prac3OR4) //7が出力される
 
-//Day 49 春休みの振り返り - 復習(1)
+
+//Day 50: 春休みの振り返り - 復習(2)
+
+
+//BaekJoon Algorithm Study n.1992 (QuadTree) 重要度: 🎖🎖🎖🎖🎖🎖
+//分割統治法 , 再帰関数
+
+//BaekJoon Algorithm Study n.1074 (Z) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+//分割統治法 , 再帰関数
+// 注意: 時間超過にならないように設計する際、注意すること
+// 🔥Hard!!🔥
+
+
+
+
+
+
+
 
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
