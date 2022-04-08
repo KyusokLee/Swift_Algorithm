@@ -47,6 +47,7 @@
 		94280C1627DF61BE0010E078 /* Day33_BaekJoon Algorithm Study 一週間の復習(3) + BFS, BitMasking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day33_BaekJoon Algorithm Study 一週間の復習(3) + BFS, BitMasking.swift"; sourceTree = "<group>"; };
 		942862D827D772BC00A8C00C /* Day30_BaekJoon Algorithm Study 具現問題(6).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day30_BaekJoon Algorithm Study 具現問題(6).swift"; sourceTree = "<group>"; };
 		942A83E627F8766A00FCC82D /* Day44_BaekJoon Algorithm Study Dijkstra + DFS,BFS  シリーズ(10) + Two Pointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day44_BaekJoon Algorithm Study Dijkstra + DFS,BFS  シリーズ(10) + Two Pointer.swift"; sourceTree = "<group>"; };
+		942C74DE280066680078E08C /* Day50_BaekJoon Algorithm Study 具現問題(7).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day50_BaekJoon Algorithm Study 具現問題(7).swift"; sourceTree = "<group>"; };
 		942CF56127CE3B38007046EE /* Day23_BaekJoon Algorithm Study 一週間の復習(2) + DFS深化問題(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day23_BaekJoon Algorithm Study 一週間の復習(2) + DFS深化問題(1).swift"; sourceTree = "<group>"; };
 		942E486A27BBC3DE00576BB8 /* Day10_BaekJoon Algorithm Class2 _day 6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day10_BaekJoon Algorithm Class2 _day 6.swift"; sourceTree = "<group>"; };
 		94310D6527C7A59000D387EF /* Day18_BaekJoon Algorithm Study Class2_Day_14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day18_BaekJoon Algorithm Study Class2_Day_14.swift"; sourceTree = "<group>"; };
@@ -163,6 +164,7 @@
 				9451536727FC612F00DB8986 /* Day47_BaekJoon Algorithm Study 分割統治法シリーズ(1).swift */,
 				94C18EEE27FDC09C006052C9 /* Day48_BaekJoon Algorithm Study BackTrackingシリーズ(1) + DFS,BFS シリーズ(12).swift */,
 				94262DC527FF15B3007EB3D3 /* Day49_BaekJoon Algorithm Study 春休みの振り返り_復習(1).swift */,
+				942C74DE280066680078E08C /* Day50_BaekJoon Algorithm Study 具現問題(7).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
