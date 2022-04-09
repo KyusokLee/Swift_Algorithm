@@ -261,8 +261,7 @@ import Foundation
 //    print("wow")
 //}
 
-
-//Day 51: 春休みの振り返り - 復習(2)
+//Day 52: 春休みの振り返り - 復習(2)
 
 //BaekJoon Algorithm Study n.1992 (QuadTree) 重要度: 🎖🎖🎖🎖🎖🎖
 //分割統治法 , 再帰関数
