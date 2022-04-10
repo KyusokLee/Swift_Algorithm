@@ -247,7 +247,7 @@ import Foundation
 //let prac3OR4 = pracBit3 | pracBit4
 //print(prac3OR4) //7が出力される
 
-////Tuple 型の contains活用
+//// 🔥 Tuple 型の contains活用 🔥
 //var visited: [(Int, Int)] = []
 //var index = 0
 //visited.append((1, 2))
@@ -261,15 +261,42 @@ import Foundation
 //    print("wow")
 //}
 
-//Day 52: 春休みの振り返り - 復習(2)
+////  🔥 配列の活用練習🔥
+//var pracArrayA = [0, 1, 2, 3, 4]
+//var newPracA = [[Int]]()
+//if pracArrayA.contains(4) {
+//    newPracA.append(Array(pracArrayA[pracArrayA.firstIndex(of: 4)!...]))
+//}
+//print(newPracA) // [[4]]が出力される
+//
+//var newPracC = Array(pracArrayA.firstIndex(of: 2)!...4)
+//print(newPracC) // [2, 3, 4]が出力される
+//
+//var newPracB = [[Int]]()
+//if pracArrayA.contains(2) {
+//    newPracB.append(Array(pracArrayA.firstIndex(of: 2)!...pracArrayA.endIndex))
+//}
+//print(newPracB) // [[2, 3, 4, 5]]が出力される --> つまり、endIndexは、配列上でのindexではなく、そのindexが配列で何番目のindexであるかを表すメッソドである
+//
+//var newPracBB = [[Int]]()
+//if pracArrayA.contains(2) {
+//    newPracBB.append(Array(pracArrayA.firstIndex(of: 2)!...pracArrayA.endIndex - 1))
+//    // 上の表記でendIndexを記入しないと、newPracBBが正しく出力されずに加え、プログラムが正しく終わらなくなる --- (*)
+//}
+//print(newPracBB) // [[2, 3, 4]]が出力される
+//
+//var newPracBBB = [[Int]]()
+//if pracArrayA.contains(2) {
+//    newPracBBB.append(Array(pracArrayA[pracArrayA.firstIndex(of: 2)!...]))
+//    //　上の表記では、上記で示した (*)とは違って、配列に格納された要素の数はすでに決まっており、パソコンが配列の最後の要素のindexが何かを認識することができる
+//    //   --> そのため、このような表記方法は、(*) と異なり、newPracBBBが正しく出力されると共に、プログラムが正しく終わる
+//}
+//print(newPracBBB) // [[2, 3, 4]]が出力される
 
-//BaekJoon Algorithm Study n.1992 (QuadTree) 重要度: 🎖🎖🎖🎖🎖🎖
-//分割統治法 , 再帰関数
+//Day53 
 
-//BaekJoon Algorithm Study n.1074 (Z) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
-//分割統治法 , 再帰関数
-// 注意: 時間超過にならないように設計する際、注意すること
-// 🔥Hard!!🔥
+
+
 
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
