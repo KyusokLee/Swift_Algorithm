@@ -293,9 +293,6 @@ import Foundation
 //}
 //print(newPracBBB) // [[2, 3, 4]]が出力される
 
-//Day53 
-
-
 
 
 //📝➡️ここからは、明日から
