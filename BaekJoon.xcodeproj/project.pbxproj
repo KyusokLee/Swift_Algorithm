@@ -36,6 +36,7 @@
 		941558E827CB99C800B5E00A /* Day21_BaekJoon Algorithm Study Dynamic Programming Day 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day21_BaekJoon Algorithm Study Dynamic Programming Day 2.swift"; sourceTree = "<group>"; };
 		941968BF27CA481F00782C5A /* Day20_BaekJoon Algorithm Study Dynamic Programming Day 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day20_BaekJoon Algorithm Study Dynamic Programming Day 1.swift"; sourceTree = "<group>"; };
 		941AFF7227C3B2200073D770 /* Day15_BaekJoon Algorithm Study Class2_Day_11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day15_BaekJoon Algorithm Study Class2_Day_11.swift"; sourceTree = "<group>"; };
+		941B57B1280719A4000E3B5F /* Day54_BaekJoon Algorithm Study DFS,BFS シリーズ(13)の完成.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day54_BaekJoon Algorithm Study DFS,BFS シリーズ(13)の完成.swift"; sourceTree = "<group>"; };
 		941C5CB127C5066E00403383 /* Day16_BaekJoon Algorithm Study Class2_Day_12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day16_BaekJoon Algorithm Study Class2_Day_12.swift"; sourceTree = "<group>"; };
 		941D72E127D386D100AB499F /* Day27_BaekJoon Algorithm Study 深化問題 Series - (1) Difficult BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day27_BaekJoon Algorithm Study 深化問題 Series - (1) Difficult BFS.swift"; sourceTree = "<group>"; };
 		941E84D42803068500EDEDA2 /* Day52_BaekJoon Algorithm Study 春休みの振り返り_復習(2).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day52_BaekJoon Algorithm Study 春休みの振り返り_復習(2).swift"; sourceTree = "<group>"; };
@@ -171,6 +172,7 @@
 				94D04F852801BEB800649AA6 /* Day51_BaekJoon Algorithm Study 具現問題(8).swift */,
 				941E84D42803068500EDEDA2 /* Day52_BaekJoon Algorithm Study 春休みの振り返り_復習(2).swift */,
 				94A31C4328045AB4008B924F /* Day53_BaekJoon Algorithm Study DFS,BFS シリーズ(13).swift */,
+				941B57B1280719A4000E3B5F /* Day54_BaekJoon Algorithm Study DFS,BFS シリーズ(13)の完成.swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;

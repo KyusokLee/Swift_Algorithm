@@ -293,44 +293,7 @@ import Foundation
 //}
 //print(newPracBBB) // [[2, 3, 4]]が出力される
 
-
-//Day54 DFS,BFS シリーズ(13)の続き
-
-//BaekJoon Algorithm Study n.1389 (Kebin-bacon'sの6段階法則) 重要度: 🎖🎖🎖🎖🎖🎖🎖
-// Floyd-Wharshall (Greedy Algorithm の１つ)
-//⚠️途中の段階
-let data = readLine()!.split(separator: " ").map { Int(String($0))! }
-let users = data[0], friendRelations = data[1]
-var relations = [[Int]](repeating: [Int](), count: users)
-var relationCount = [Int](repeating: 5, count: users)
-var resultPerson = 0
-
-//友達関係を二重配列に格納する
-for _ in 0..<friendRelations {
-    let putData = readLine()!.split(separator: " ").map { Int(String($0))! - 1 }
-    if !relations[putData[0]].contains(putData[1]) {
-        relations[putData[0]].append(putData[1])
-        relations[putData[1]].append(putData[0])
-    }
-}
-
-for i in 0..<users {
-    var tempSum = 0
-    for j in 0..<users {
-        if i == j {
-            continue
-        }
-        floydWharShall_bfs(i, j)
-    }
-}
-
-func floydWharShall_bfs(_ start: Int, _ targetPerson: Int) {
-    var neededCheckQueue: [((startP: Int, targetP: Int), step: Int)] = [((start, targetPerson), 0)]
-    
-    while start != targetPerson {
-        
-    }
-}
+//Day 55
 
 
 
