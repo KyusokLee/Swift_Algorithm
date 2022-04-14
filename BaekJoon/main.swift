@@ -293,9 +293,6 @@ import Foundation
 //}
 //print(newPracBBB) // [[2, 3, 4]]が出力される
 
-//Day 55
-
-
 
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
