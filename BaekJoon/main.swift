@@ -293,6 +293,58 @@ import Foundation
 //}
 //print(newPracBBB) // [[2, 3, 4]]が出力される
 
+//Day 56 BFS,DFS シリーズ(15)
+//BaekJoon Algorithm Study n.12851 (かくれんぼ3) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+// ⚠️途中の段階
+let data = readLine()!.split(separator: " ").map { Int(String($0))! }
+let subin = data[0], sister = data[1]
+var visited = Array(repeating: false, count: 100001)
+var neededCheckQueue = [(subin, 0)]
+var resultTime = 0
+var resultWays = [(Int, Int)]()
+
+bfs_findingSister2(subin, sister)
+print(neededCheckQueue)
+print(resultTime)
+print(resultWays)
+
+func bfs_findingSister2(_ start: Int, _ destination: Int) {
+    visited[start] = true
+    var index = 0
+    
+    while index < neededCheckQueue.count {
+        let (curLocate, time) = neededCheckQueue[index]
+        if curLocate == destination {
+            resultTime = time
+            resultWays.append((curLocate, time))
+            break
+        }
+        
+        for i in [curLocate - 1, curLocate + 1, curLocate * 2] {
+            let nextLocate = i
+            
+            if nextLocate < 0 || nextLocate >= 100001 || visited[nextLocate] {
+                continue
+            }
+            
+            neededCheckQueue.append((nextLocate, time + 1))
+            visited[nextLocate] = true
+        }
+        index += 1
+    }
+}
+
+func countWays(_ targetTime: Int) {
+    
+}
+
+
+
+
+//BaekJoon Algorithm Study n.13549 (かくれんぼ3) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+// Dijkstra アルゴリズム, 0-1bfsアルゴリズムの活用
+
+
 
 
 
