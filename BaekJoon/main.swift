@@ -293,52 +293,106 @@ import Foundation
 //}
 //print(newPracBBB) // [[2, 3, 4]]が出力される
 
-//Day 56 BFS,DFS シリーズ(15)
-//BaekJoon Algorithm Study n.12851 (かくれんぼ3) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+////Day 56 BFS,DFS シリーズ(15) - 途中(2)
+////BaekJoon Algorithm Study n.12851 (かくれんぼ3) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
+//// ⚠️途中の段階
+//// かくれんぼ4と似たような問題 (🌈考察: visited[目的地]の部分だけ再訪問できるように設計すること)
+//// 訪問した場所ももう一回訪問する必要がある問題
+//// 例は正しく実行されたが、反例があるようだ！
+//let data = readLine()!.split(separator: " ").map { Int(String($0))! }
+//let subin = data[0], sister = data[1]
+//var visited = Array(repeating: false, count: 100001)
+//var neededCheckQueue = [(subin, 0)]
+//var resultTime = 0
+//
+//bfs_findingSister2(subin, sister)
+//print(resultTime)
+//print(neededCheckQueue.filter { $0 == (sister, resultTime) }.count)
+//
+//func bfs_findingSister2(_ start: Int, _ destination: Int) {
+//    visited[start] = true
+//    var index = 0
+//
+//    while index < neededCheckQueue.count {
+//        let (curLocate, time) = neededCheckQueue[index]
+//        if curLocate == destination {
+//            resultTime = time
+//            break
+//        }
+//
+//        for i in [curLocate - 1, curLocate + 1, curLocate * 2] {
+//            let nextLocate = i
+//
+//            if nextLocate < 0 || nextLocate >= 100001 || visited[nextLocate] {
+//                continue
+//            }
+//
+//            neededCheckQueue.append((nextLocate, time + 1))
+//            visited[nextLocate] = true
+//
+//            if nextLocate == destination {
+//                visited[nextLocate] = false
+//            }
+//        }
+//        index += 1
+//    }
+//}
+
+// エラーが出ない方法　(これも反例がでた)
+// BFS関数使用せず！
 // ⚠️途中の段階
 let data = readLine()!.split(separator: " ").map { Int(String($0))! }
 let subin = data[0], sister = data[1]
-var visited = Array(repeating: false, count: 100001)
+var visited = Array(repeating: -1, count: 100001)
 var neededCheckQueue = [(subin, 0)]
-var resultTime = 0
-var resultWays = [(Int, Int)]()
+var minTime = 98765432
+var allWays = 0
+var index = 0
+var resultWays = [Int]()
+var finalResult = [Int]()
+visited[subin] = 0
 
-bfs_findingSister2(subin, sister)
-print(neededCheckQueue)
-print(resultTime)
-print(resultWays)
-
-func bfs_findingSister2(_ start: Int, _ destination: Int) {
-    visited[start] = true
-    var index = 0
+while true {
+    let (curLocate, time) = neededCheckQueue[index]
+    if curLocate == sister {
+        visited[curLocate] = -1
+        
+        if minTime > time {
+            minTime = time
+        }
+    }
     
-    while index < neededCheckQueue.count {
-        let (curLocate, time) = neededCheckQueue[index]
-        if curLocate == destination {
-            resultTime = time
-            resultWays.append((curLocate, time))
-            break
+    if minTime < time {
+        break
+    }
+    
+    for i in [curLocate - 1, curLocate + 1, curLocate * 2] {
+        let nextLocate = i
+        
+        if nextLocate < 0 || nextLocate >= 100001 || visited[nextLocate] != -1 {
+            continue
         }
         
-        for i in [curLocate - 1, curLocate + 1, curLocate * 2] {
-            let nextLocate = i
-            
-            if nextLocate < 0 || nextLocate >= 100001 || visited[nextLocate] {
-                continue
-            }
-            
-            neededCheckQueue.append((nextLocate, time + 1))
-            visited[nextLocate] = true
+        visited[nextLocate] = curLocate
+        neededCheckQueue.append((nextLocate, time + 1))
+        if nextLocate == sister {
+            finalResult.append(curLocate)
         }
-        index += 1
+        
+//        if nextLocate == sister {
+//            visited[nextLocate] = -1
+//            resultWays.append(curLocate)
+//        }
     }
-}
-
-func countWays(_ targetTime: Int) {
     
+    index += 1
 }
 
-
+print(minTime)
+print(resultWays.count)
+print(neededCheckQueue)
+print(finalResult)
+//最短時間での到着じゃないのも含めてしまい、エラーが出たよう
 
 
 //BaekJoon Algorithm Study n.13549 (かくれんぼ3) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
