@@ -294,12 +294,6 @@ import Foundation
 //print(newPracBBB) // [[2, 3, 4]]が出力される
 
 
-//BaekJoon Algorithm Study n.13549 (かくれんぼ3) 重要度: 🎖🎖🎖🎖🎖🎖🎖🎖🎖🎖
-// Dijkstra アルゴリズム, 0-1bfsアルゴリズムの活用
-
-
-
-
 
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
