@@ -296,9 +296,6 @@ import Foundation
 
 
 
-
-
-
 //📝➡️ここからは、明日から
 //BaekJoon Algorithm Study n.11725 (treeの親探し)
 
