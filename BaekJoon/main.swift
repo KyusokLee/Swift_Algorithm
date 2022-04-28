@@ -295,7 +295,84 @@ import Foundation
 
 
 
+////Atcoder n.235 - A
+//
+//var input = Array(readLine()!)
+//var sum = Int(input.map { String($0) }.reduce("", +))!
+//
+//for _ in 0..<2 {
+//    let remove = input.removeFirst()
+//    input.append(remove)
+//    sum += Int(input.map { String($0) }.reduce("", +))!
+//}
+//
+//print(sum)
 
+//Atcoder n.235 - B
+let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+let rowSize = input[0], columnSize = input[1]
+var newMap = Array(repeating: Array(repeating: 0, count: rowSize), count: columnSize)
+var result = ""
+
+for i in 0..<rowSize {
+    let putData = readLine()!.split(separator: " ").map { Int(String($0))! }
+    for j in 0..<putData.count {
+        newMap[j][i] = putData[j]
+    }
+}
+
+for i in 0..<columnSize {
+    result += newMap[i].map { String($0) }.joined(separator: " ")
+    result += "\n"
+}
+result.removeLast()
+print(result)
+
+////Atcoder n.200 -A
+//var input = Int(readLine()!)!
+//if input % 100 == 0 {
+//    input /= 100
+//} else {
+//    input = input / 100 + 1
+//}
+//print(input)
+
+////Atcoder n.200 -B
+//let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+//var N = input[0]
+//let K = input[1]
+//var result = ""
+//
+//for _ in 0..<K {
+//    if N % 200 == 0 {
+//        N /= 200
+//    } else {
+//        var strN = String(N)
+//        strN += "200"
+//        N = Int(strN)!
+//    }
+//}
+//print(N)
+
+////Atcoder n.200 -C
+//// 時間超過になったコード
+//let input = Int(readLine()!)!
+//var numArray = readLine()!.split(separator: " ").map { Int(String($0))! % 200}
+//var result = 0
+//
+//for i in 0..<input {
+//    for j in i + 1..<input {
+//        if numArray[i] - numArray[j] == 0 {
+//            result += 1
+//        }
+//    }
+//}
+//print(result)
+
+
+
+//復習2: 入力値によるFizzBuzz問題
+//⚠️途中の段階
 
 
 //📝➡️ここからは、明日から

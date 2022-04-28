@@ -65,6 +65,7 @@
 		9447309327C26381005F9B37 /* Day14_BaekJoon Algorithm Study Class2_Day_10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day14_BaekJoon Algorithm Study Class2_Day_10.swift"; sourceTree = "<group>"; };
 		944B104527D0CEA100C11011 /* Day25_BaekJoon Algorithm Study 具現問題(2) + Greedy (1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day25_BaekJoon Algorithm Study 具現問題(2) + Greedy (1).swift"; sourceTree = "<group>"; };
 		944D4F5927EA133B004C164C /* Day36_BaekJoon Algorithm Study DFS, BFS シリーズ(3).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day36_BaekJoon Algorithm Study DFS, BFS シリーズ(3).swift"; sourceTree = "<group>"; };
+		944F0A15281ACF3800CBD4E8 /* Day65_BaekJoon Algorithm Study 多様なアルゴリズム(3).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day65_BaekJoon Algorithm Study 多様なアルゴリズム(3).swift"; sourceTree = "<group>"; };
 		9451536727FC612F00DB8986 /* Day47_BaekJoon Algorithm Study 分割統治法シリーズ(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day47_BaekJoon Algorithm Study 分割統治法シリーズ(1).swift"; sourceTree = "<group>"; };
 		94564C7727BE6D190076F97D /* Day11_BaekJoon Algorithm Study Class2_Day_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day11_BaekJoon Algorithm Study Class2_Day_7.swift"; sourceTree = "<group>"; };
 		94610E4F27CF903D00C571A8 /* Day24_BaekJoon Algorithm Study 具現問題(1) + BFS深化問題(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day24_BaekJoon Algorithm Study 具現問題(1) + BFS深化問題(1).swift"; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 				9491C1A4281568ED006D5DEF /* Day62_BaekJoon Algorithm Study アルゴリズム復習-(2).swift */,
 				94E472912816DA080051173C /* Day63_BaekJoon Algorithm Study アルゴリズム復習-(3).swift */,
 				9424E72F2819785300BA1668 /* Day64_BaekJoon Algorithm Study BFS,DFS シリーズ (18).swift */,
+				944F0A15281ACF3800CBD4E8 /* Day65_BaekJoon Algorithm Study 多様なアルゴリズム(3).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
