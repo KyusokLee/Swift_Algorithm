@@ -7,7 +7,7 @@
 
 import Foundation
 //AtCoder Beginner Contest 235
-
+// ⚠️途中の段階
 //Atcoder n.235 - A
 
 var input = Array(readLine()!)
@@ -40,3 +40,5 @@ for i in 0..<columnSize {
 }
 result.removeLast()
 print(result)
+
+//Atcoder n.235 - C
