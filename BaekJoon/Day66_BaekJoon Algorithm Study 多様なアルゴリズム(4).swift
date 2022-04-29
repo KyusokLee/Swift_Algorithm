@@ -53,13 +53,6 @@ func dfs_checkPeople(_ depth: Int, _ num: Int, _ checked: inout [Bool]) {
     }
 }
 
-//BaekJoon n.11726 (2 x n タイル) 重要度: 🎖🎖🎖🎖🎖🎖
-//🎖 DP
-// ⚠️途中の段階
-let data = Int(readLine()!)!
-
-
-
 //復習2: 入力値によるFizzBuzz問題
 // 入力例1: 2:two 3:three 7:seven 4:four 21
 // 出力例1: threeseven
