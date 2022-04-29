@@ -295,6 +295,10 @@ import Foundation
 
 
 
+
+
+
+
 ////Atcoder n.235 - A
 //
 //var input = Array(readLine()!)
@@ -308,25 +312,25 @@ import Foundation
 //
 //print(sum)
 
-//Atcoder n.235 - B
-let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-let rowSize = input[0], columnSize = input[1]
-var newMap = Array(repeating: Array(repeating: 0, count: rowSize), count: columnSize)
-var result = ""
-
-for i in 0..<rowSize {
-    let putData = readLine()!.split(separator: " ").map { Int(String($0))! }
-    for j in 0..<putData.count {
-        newMap[j][i] = putData[j]
-    }
-}
-
-for i in 0..<columnSize {
-    result += newMap[i].map { String($0) }.joined(separator: " ")
-    result += "\n"
-}
-result.removeLast()
-print(result)
+////Atcoder n.235 - B
+//let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+//let rowSize = input[0], columnSize = input[1]
+//var newMap = Array(repeating: Array(repeating: 0, count: rowSize), count: columnSize)
+//var result = ""
+//
+//for i in 0..<rowSize {
+//    let putData = readLine()!.split(separator: " ").map { Int(String($0))! }
+//    for j in 0..<putData.count {
+//        newMap[j][i] = putData[j]
+//    }
+//}
+//
+//for i in 0..<columnSize {
+//    result += newMap[i].map { String($0) }.joined(separator: " ")
+//    result += "\n"
+//}
+//result.removeLast()
+//print(result)
 
 ////Atcoder n.200 -A
 //var input = Int(readLine()!)!
@@ -368,6 +372,99 @@ print(result)
 //    }
 //}
 //print(result)
+
+////時間超過にならないコード
+////🌈考察: この問題は、組み合わせの基礎問題であった
+////  順列と組み合わせの違い
+////  🎖1. 順列: 並べる順序に意味があるということ --> つまり、 1 2 3の数字があるとき、 1 2 3 , 1 3 2, 2 3 1など、順序が違うことに意味を持つため、1 2 3 と 1 3 2を他のものとして扱う --> 順序が違ったら同じ数字が選択されても違うやつにみるということ！！
+////  🎖2. 組み合わせ: 並べる順序に意味がないということ --> 1 2 3の数字があるとき、 1 2 3 と　 1 3 2などは共存できない
+////                --> 順序が違うことに全く意味を持たないため、 1 2 3と 1 3 2は同じものとして扱う
+//func combination(_ num: Int) -> Int {
+//    if num == 0 || num == 1 {
+//        return 0
+//    } else {
+//        return num * (num - 1) / 2
+//    }
+//}
+//
+//let nums = Int(readLine()!)!
+//let numArray = readLine()!.split(separator: " ").map{ Int(String($0))! }
+//var counter = [Int](repeating: 0, count: 200)
+//var answer = 0
+//
+//for x in numArray {
+//    counter[x % 200] += 1
+//}
+//
+//for x in 0..<counter.count {
+//    if counter[x] != 0 {
+//        answer += combination(counter[x])
+//    }
+//}
+//print(answer)
+
+////Atcoder n.200 -D
+////Happy BirthDay!2
+//// 🔥Hard!!
+//// BIt Masking + Bit全探索
+//let numbers = Int(readLine()!)!
+//let numArray = readLine()!.split(separator: " ").map { Int(String($0))! }
+//
+//if let (checkedB, checkedC) = checkBC(numArray) {
+//    print("Yes")
+//    print("\(checkedB.count) \(checkedB.map { String($0 + 1) }.joined(separator: " "))")
+//    print("\(checkedC.count) \(checkedC.map { String($0 + 1) }.joined(separator: " "))")
+//} else {
+//    print("No")
+//}
+//
+////🔥このアルゴリアルが難しかった‼️
+//func checkBC(_ compareArray: [Int]) -> (arrayB: [Int], arrayC: [Int])? {
+//    let upperBoundCount = min(compareArray.count, 8)
+//    var tempArray = [Int: [Int]]()
+//
+//    //1をupperBoundCountの値ほど左シフト演算した範囲まで探索 ex) 1 << 3　= 8, 1 << 6 = 64
+//    for i in 1..<(1 << upperBoundCount) {
+//        let indexes = (0..<upperBoundCount).filter { i & (1 << $0) != 0 } //２進数が被ってるところ(お互い1であるところのみ抽出) -> indexの値をfilter
+//        let sum = indexes.map { compareArray[$0] }.reduce(0, +) % 200
+//        if let alreadyFindedSame = tempArray[sum] {
+//            return (alreadyFindedSame, indexes)
+//        } else {
+//            tempArray[sum] = indexes
+//        }
+//    }
+//
+//    return nil
+//}
+
+
+////Bit探索練習
+//let BitA = 2   // 00000010
+//let BitB = 4   // 00000100
+//let BitB2 = 5  // 00000110
+//let BitB_B2 = BitB & BitB2  //   上記の2進数で 今日つである1が 2 ^ 2の部分にあるため、4が出力
+//print(BitB_B2) // 出力: 4
+//let BitA_B = BitA & BitB // 比較する2つの値の2進数が同値であるところを出力
+//print(BitA_B)  // 出力: 0
+//
+//let BitC = 27
+//let BitD = 27
+//let BitC_D = BitC & BitD
+//print(BitC_D)  //出力: 27
+//
+//
+//let m = 8
+//for i in 1..<10 {
+//    let indices = (0..<m).filter { i & (1 << $0) != 0 } // 10進数 i を2進数の表現と、1を $0　ほど左シフトした２進数の表現で共通してるところがあればfilterする
+//    //　ex) i = 9  -> 1001(2進数) --> つまり、3の位置と0の位置に1をすることで 2 ^ 3 + 2 ^ 0 = 9 になる
+//    // したがって、[0, 3]　が出力される
+//    print("i番目: \(i) \(indices)")
+//}
+//
+//let prac_Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//let prac_filter = prac_Array.filter { $0 % 2 == 0 } // filterの中のClosureの式に当てはまる要素だけ取り出して配列にする
+//print(prac_filter)
+
 
 
 
