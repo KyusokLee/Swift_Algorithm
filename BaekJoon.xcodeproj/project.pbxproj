@@ -69,6 +69,7 @@
 		944F0A15281ACF3800CBD4E8 /* Day65_BaekJoon Algorithm Study 多様なアルゴリズム(3).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day65_BaekJoon Algorithm Study 多様なアルゴリズム(3).swift"; sourceTree = "<group>"; };
 		9451536727FC612F00DB8986 /* Day47_BaekJoon Algorithm Study 分割統治法シリーズ(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day47_BaekJoon Algorithm Study 分割統治法シリーズ(1).swift"; sourceTree = "<group>"; };
 		94564C7727BE6D190076F97D /* Day11_BaekJoon Algorithm Study Class2_Day_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day11_BaekJoon Algorithm Study Class2_Day_7.swift"; sourceTree = "<group>"; };
+		945F7A012822A0D800D27991 /* Day69_BaekJoon Algorithm Study 多様なアルゴリズム(7).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day69_BaekJoon Algorithm Study 多様なアルゴリズム(7).swift"; sourceTree = "<group>"; };
 		94610E4F27CF903D00C571A8 /* Day24_BaekJoon Algorithm Study 具現問題(1) + BFS深化問題(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day24_BaekJoon Algorithm Study 具現問題(1) + BFS深化問題(1).swift"; sourceTree = "<group>"; };
 		9466556027B611D300665C9C /* Day6_BaekJoon Algorithm Class2_day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day6_BaekJoon Algorithm Class2_day3.swift"; sourceTree = "<group>"; };
 		9468C93527FB28A90066E9AF /* Day46_BaekJoon Algorithm Study DP 分析(1) + 0_1 Knapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day46_BaekJoon Algorithm Study DP 分析(1) + 0_1 Knapsack.swift"; sourceTree = "<group>"; };
@@ -199,6 +200,7 @@
 				94161CF0281C1A1E00E755EA /* Day66_BaekJoon Algorithm Study 多様なアルゴリズム(4).swift */,
 				94B3F25C281E89D900655F5E /* Day67_BaekJoon Algorithm Study 多様なアルゴリズム(5).swift */,
 				94FD30DF28214A8E00A99FEC /* Day68_BaekJoon Algorithm Study 多様なアルゴリズム(6).swift */,
+				945F7A012822A0D800D27991 /* Day69_BaekJoon Algorithm Study 多様なアルゴリズム(7).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
