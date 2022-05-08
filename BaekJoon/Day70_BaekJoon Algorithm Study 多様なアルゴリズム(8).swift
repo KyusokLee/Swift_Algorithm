@@ -37,14 +37,19 @@ let number = Int(readLine()!)!
 var dp = [Int](repeating: 0, count: number + 1)
 dp[1] = 1
 
+//ここでiは、その数字を指す
 for i in 2..<number + 1 {
-    var minValue = Int.max // infiniteの表現
+    var minValue = Int.max // 和が i と同じになる平方数の最小個数
+    // 例1) 7 = 2 ^ 2 + 1 ^ 2 + 1 ^ 2 + 1 ^ 2 = 4個の組み合わせ
+    // 例2) 9 = 3 ^ 2 = 1個
     var j = 1
     
+    // 当該数字iの前の数字に、平方数があるかないかを調査
     while j * j <= i {
         minValue = min(minValue, dp[i - j * j])
         j += 1
     }
+    // + 1しないと、dp[3]以降は、0になり、正しく実効されない
     dp[i] = minValue + 1
 }
 
