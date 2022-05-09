@@ -27,6 +27,7 @@
 		94161CE4281BF5CE00E755EA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		94161CEE281BF68300E755EA /* Atcoder Beginner Contest 200.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atcoder Beginner Contest 200.swift"; sourceTree = "<group>"; };
 		94161CEF281BF70600E755EA /* Atcoder Beginner Contest 235.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atcoder Beginner Contest 235.swift"; sourceTree = "<group>"; };
+		94CCE9AB2828EAA500AF1F87 /* BitMaskingによるindex探索.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BitMaskingによるindex探索.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			children = (
 				94161CEE281BF68300E755EA /* Atcoder Beginner Contest 200.swift */,
 				94161CEF281BF70600E755EA /* Atcoder Beginner Contest 235.swift */,
+				94CCE9AB2828EAA500AF1F87 /* BitMaskingによるindex探索.swift */,
 				94161CE4281BF5CE00E755EA /* main.swift */,
 			);
 			path = AtCoder;
