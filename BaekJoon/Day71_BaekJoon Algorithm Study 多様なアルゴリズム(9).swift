@@ -220,6 +220,15 @@ struct Data : Comparable {
     var index: Int
 }
 
+//struct EdgeData: Comparable {
+//    static func < (left: EdgeData, right: EdgeData) -> Bool {
+//        left.value < right.value
+//    }
+//
+//    var value: Int
+//    var node: Int
+//}
+
 let testCase = Int(readLine()!)!
 
 for _ in 0..<testCase {
@@ -229,6 +238,8 @@ for _ in 0..<testCase {
 
 func printMax_Min(_ dataNumbers: Int) {
     var validValue = [Bool](repeating: false, count: 1000001)
+    // 上記で作った構造体 priorityQueueをジェネリックタイプ（Generic Type）にしたため、Struck(構造体)をType Parameterとして使える
+    // Tは、Type Parameter の略 -> ただのPlaceHolderの役をする
     var maxPriorityQueue = priorityQueue<Data>(sort: >) // 最大Heapの実装
     var minPriorityQueue = priorityQueue<Data>(sort: <) // 最小Heapの実装
 
