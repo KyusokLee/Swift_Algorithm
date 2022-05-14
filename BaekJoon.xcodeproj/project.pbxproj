@@ -65,6 +65,7 @@
 		9433E80027C13188006E033A /* Day13_BaekJoon Algorithm Study Class2_Day_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day13_BaekJoon Algorithm Study Class2_Day_9.swift"; sourceTree = "<group>"; };
 		943CA69127D61A3D00BA3398 /* Day29_BaekJoon Algorithm Study 具現問題(5).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day29_BaekJoon Algorithm Study 具現問題(5).swift"; sourceTree = "<group>"; };
 		94449EC027C646D600EFE997 /* Day17_BaekJoon Algorithm Study Class2_Day_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day17_BaekJoon Algorithm Study Class2_Day_13.swift"; sourceTree = "<group>"; };
+		9446BB27282FFA2E00578543 /* Day74_BaekJoon Algorithm Study 多様なアルゴリズム(12).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day74_BaekJoon Algorithm Study 多様なアルゴリズム(12).swift"; sourceTree = "<group>"; };
 		9447309327C26381005F9B37 /* Day14_BaekJoon Algorithm Study Class2_Day_10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day14_BaekJoon Algorithm Study Class2_Day_10.swift"; sourceTree = "<group>"; };
 		944B104527D0CEA100C11011 /* Day25_BaekJoon Algorithm Study 具現問題(2) + Greedy (1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day25_BaekJoon Algorithm Study 具現問題(2) + Greedy (1).swift"; sourceTree = "<group>"; };
 		944D4F5927EA133B004C164C /* Day36_BaekJoon Algorithm Study DFS, BFS シリーズ(3).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day36_BaekJoon Algorithm Study DFS, BFS シリーズ(3).swift"; sourceTree = "<group>"; };
@@ -211,6 +212,7 @@
 				9470E28D282AB40B000D67B8 /* Day72_BaekJoon Algorithm Study 多様なアルゴリズム(10) + 文字列.swift */,
 				94516854282F832D00E4F608 /* Day73_BaekJoon Algorithm Study 多様なアルゴリズム(11) + 文字列.swift */,
 				94516855282F9BCA00E4F608 /* Tree アルゴリズム.swift */,
+				9446BB27282FFA2E00578543 /* Day74_BaekJoon Algorithm Study 多様なアルゴリズム(12).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;
