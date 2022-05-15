@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9409FBAA2831348600BD5EA9 /* Day75_BaekJoon Algorithm Study 多様なアルゴリズム(13).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day75_BaekJoon Algorithm Study 多様なアルゴリズム(13).swift"; sourceTree = "<group>"; };
 		940D121927EB43B100DBA045 /* 位相ソート and 最長部分数列(LIS)アルゴリズム -- 未完成版.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "位相ソート and 最長部分数列(LIS)アルゴリズム -- 未完成版.swift"; sourceTree = "<group>"; };
 		940D121A27EB448300DBA045 /* Day37_BaekJoon Algorithm Study DFS, BFS シリーズ(4) + LISアルゴリズム.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day37_BaekJoon Algorithm Study DFS, BFS シリーズ(4) + LISアルゴリズム.swift"; sourceTree = "<group>"; };
 		940DFF0727CCE58F003C9FFE /* Day22_BaekJoon Algorithm Study 一週間の復習(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day22_BaekJoon Algorithm Study 一週間の復習(1).swift"; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 				94516854282F832D00E4F608 /* Day73_BaekJoon Algorithm Study 多様なアルゴリズム(11) + 文字列.swift */,
 				94516855282F9BCA00E4F608 /* Tree アルゴリズム.swift */,
 				9446BB27282FFA2E00578543 /* Day74_BaekJoon Algorithm Study 多様なアルゴリズム(12).swift */,
+				9409FBAA2831348600BD5EA9 /* Day75_BaekJoon Algorithm Study 多様なアルゴリズム(13).swift */,
 				9413123327B52A98003F77A1 /* main.swift */,
 			);
 			path = BaekJoon;

@@ -293,6 +293,15 @@ import Foundation
 //}
 //print(newPracBBB) // [[2, 3, 4]]が出力される
 
+//// Dictionary活用練習
+//let sortedDict = dictionary.sorted(by: { $0 < $1  }) // (key, value)のTupleのArrayが出力される
+//let sr = dictionary.keys.sorted() // keyだけがsortされて、valueは格納されていない配列が出力されてしまう
+//print(type(of: sortedDict)) // Array<(key, value)>
+//print(sr)
+//print(type(of: sr)) // Array<Int>
+
+
+
 
 
 

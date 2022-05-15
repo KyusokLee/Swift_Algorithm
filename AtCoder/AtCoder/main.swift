@@ -139,29 +139,57 @@ import Foundation
 //}
 
 
-//C. 時間超過になったコード -> なんで、時間超過になるんだろう
+////C. 時間超過になったコード -> なんで、時間超過になるんだろう
+//let testCases = Int(readLine()!)!
+//var strArray = [String]()
+//var pointArray = [Int]()
+//var point = 0
+//var result = 0
+//
+//for _ in 0..<testCases {
+//    let input = readLine()!.split(separator: " ").map { String($0) }
+//    strArray.append(input[0])
+//    pointArray.append(Int(input[1])!)
+//}
+//
+//var setArray = [String]()
+//
+//for i in 0..<testCases {
+//    if setArray.contains(strArray[i]) {
+//        continue
+//    }
+//    setArray.append(strArray[i])
+//    if point < pointArray[i] {
+//        point = pointArray[i]
+//        result = i + 1
+//    }
+//}
+//
+//print(result)
+
+//Dictionaryを用いた方法 -> 時間超過にならない
+// 🌈考察 : Dictionaryを使えばいい問題だった。。Dictionaryは、配列より時間複雑度が効率的である
+// 配列は、求める資料を探索する際、最悪の場合全てのindexにアクセスして探るため、O(n)
+// 一方、Dictionaryは、key と　valueを持つため、O(1)で済む
+// reverse() -> O(n)
+// reversed() -> O(1)　と似たような感覚 (reversed()は、配列の順を逆にしたものを新しく作成するため、時間複雑度はO(1)
+
+
 let testCases = Int(readLine()!)!
-var strArray = [String]()
-var pointArray = [Int]()
+var poems = [String: Int]()
 var point = 0
 var result = 0
 
-for _ in 0..<testCases {
-    let input = readLine()!.split(separator: " ").map { String($0) }
-    strArray.append(input[0])
-    pointArray.append(Int(input[1])!)
-}
-
-var setArray = [String]()
-
 for i in 0..<testCases {
-    if setArray.contains(strArray[i]) {
-        continue
-    }
-    setArray.append(strArray[i])
-    if point < pointArray[i] {
-        point = pointArray[i]
-        result = i + 1
+    let input = readLine()!.split(separator: " ").map { String($0) }
+    let getPoint = Int(input[1])!
+    
+    if poems[input[0]] == nil {
+        poems[input[0]] = getPoint
+        if point < getPoint {
+            point = getPoint
+            result = i + 1
+        }
     }
 }
 
